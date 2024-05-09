@@ -7,19 +7,19 @@ export const standingsService = {
 const ITERATE_BY_ROUNDS = [1, 2, 3, 4, 5, 7, 8];
 const ITERATE_BY_TEAM = [6];
 const TEAMS = [
+  "Athletico-PR",
   "Atlético-GO",
   "Atlético-MG",
-  "Athletico-PR",
   "Bahia",
   "Botafogo",
   "Bragantino",
-  "Cuiabá",
+  "Corinthians",
   "Criciúma",
   "Cruzeiro",
-  "Corinthians",
-  "Fortaleza",
+  "Cuiabá",
   "Flamengo",
   "Fluminense",
+  "Fortaleza",
   "Grêmio",
   "Internacional",
   "Juventude",
@@ -47,6 +47,11 @@ function getStandings(matches, option, subOption) {
     } else if (ITERATE_BY_TEAM) {
       iterateByTeam(standings, matches, option, subOption);
     }
+  }
+
+  // Calculate percents
+  for (const [key, value] of Object.entries(standings)) {
+    standings[key].percent = Math.round((100 * value.points) / (value.matches * 3) * 10) / 10
   }
 
   // Convert 
@@ -155,7 +160,7 @@ function convertStandingsToArray(standings) {
 }
 
 function emptyStandings() {
-  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0 }
+  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0 }
 }
 
 function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit) {

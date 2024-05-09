@@ -132,7 +132,7 @@ export default function OptionPicker(props) {
                 label="Classificação no dia"
                 sx={{ width: 1 }}
                 value={selectedSubOption}
-                minDate={new Date(2024,3, 13)}
+                minDate={new Date(2024, 3, 13)}
                 maxDate={new Date(2024, 11, 6)}
                 onChange={(value) => {
                   handleChange('subOption', value);
@@ -151,37 +151,39 @@ export default function OptionPicker(props) {
   // Custom padding
   const padding = { padding: { xs: '7px 4px', md: '7px 20px' } };
   return (
-    <Stack>
-      <Grid
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          '& > :not(style) + :not(style)': { mb: 2 },
-        }}
-      >
-        <ToggleButtonGroup
-          color="primary"
-          exclusive
-          onChange={(_event, value) => { handleChange('option', value) }}
+    <Box sx={{ width: '75%' }}>
+      <Stack>
+        <Grid
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            '& > :not(style) + :not(style)': { mb: 2 },
+          }}
         >
-          {
-            options.map(opt => {
-              return (
-                <ToggleButton
-                  key={opt.key}
-                  value={opt.key}
-                  size="small" sx={padding}
-                  selected={opt === selectedOption}
-                >
-                  {largeScreen.width ? opt.long : opt.short}
-                </ToggleButton>)
-            })
-          }
-        </ToggleButtonGroup>
-      </Grid>
-      {getSubOption(selectedOption, selectedSubOption)}
-    </Stack>
+          <ToggleButtonGroup
+            color="primary"
+            exclusive
+            onChange={(_event, value) => { handleChange('option', value) }}
+          >
+            {
+              options.map(opt => {
+                return (
+                  <ToggleButton
+                    key={opt.key}
+                    value={opt.key}
+                    size="small" sx={padding}
+                    selected={opt === selectedOption}
+                  >
+                    {largeScreen.width ? opt.long : opt.short}
+                  </ToggleButton>)
+              })
+            }
+          </ToggleButtonGroup>
+        </Grid>
+        {getSubOption(selectedOption, selectedSubOption)}
+      </Stack>
+    </Box>
   );
 }
 

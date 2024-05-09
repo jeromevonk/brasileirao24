@@ -63,9 +63,6 @@ function Index(props) {
                 handleChange={handleChange}
               />
               <StandingsTable
-                title="Brasileirao"
-                selectedOption={selectedOption}
-                selectedSubOption={selectedSubOption}
                 data={standings}
               />
             </Stack>

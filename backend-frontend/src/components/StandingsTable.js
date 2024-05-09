@@ -1,6 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { alpha, styled } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -10,12 +10,15 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import Paper from '@mui/material/Paper';
-import { visuallyHidden } from '@mui/utils';
+import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import {
   getComparator,
 } from 'src/helpers'
 
+
+const BACKGROUND_COLOR_HEAD = "#ffffff";
+const BACKGROUND_COLOR = "#f2f2f2";
 
 function StandingsTableHead(props) {
   const {
@@ -45,7 +48,8 @@ function StandingsTableHead(props) {
       id: 'points',
       numeric: false,
       disablePadding: false,
-      label: 'P',
+      label: 'PTS',
+      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'pointsLost',
@@ -59,6 +63,7 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'J',
+      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'victories',
@@ -71,6 +76,7 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'E',
+      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'losses',
@@ -83,27 +89,29 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'GP',
-      onlyLargeScreen: true
+      onlyLargeScreen: true,
+      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'goalsAgainst',
       numeric: false,
       disablePadding: false,
       label: 'GC',
-      onlyLargeScreen: true
+      onlyLargeScreen: true,
     },
     {
       id: 'goalDifference',
       numeric: false,
       disablePadding: false,
       label: 'SG',
+      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'percent',
       numeric: false,
       disablePadding: false,
       label: '%',
-      onlyLargeScreen: true
+      onlyLargeScreen: true,
     },
   ];
 
@@ -119,6 +127,8 @@ function StandingsTableHead(props) {
               align={headCell.numeric ? 'right' : 'center'}
               padding={headCell.disablePadding ? 'none' : 'normal'}
               sortDirection={orderBy === headCell.id ? order : false}
+              sx={{backgroundColor: headCell.backgroundColor }}
+                
               // sx={{ width: '10px' }} TODO
             >
               <TableSortLabel
@@ -152,9 +162,6 @@ export default function StandingsTable(props) {
   const context = React.useContext(AppContext);
   const largeScreen = context?.largeScreen;
 
-  // Props
-  const { selectedOption, selectedSubOption } = props;
-
   // States
   const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('points');
@@ -167,9 +174,10 @@ export default function StandingsTable(props) {
   //  Style for table rows
   // ----------------------------------------
   const StyledTableRow = styled(TableRow)(({ theme: appTheme }) => ({
-    '&:nth-of-type(odd)': {
-      backgroundColor: appTheme.palette.action.hover,
-    },
+    // '&:nth-of-type(odd)': {
+    //   backgroundColor: appTheme.palette.action.hover,
+    // },
+
     // hide last border
     '&:last-child td, &:last-child th': {
       border: 0,
@@ -206,7 +214,7 @@ export default function StandingsTable(props) {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '75%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
         <TableContainer>
           <Table
@@ -241,11 +249,11 @@ export default function StandingsTable(props) {
                       {
                         // Team
                       }
-                      <TableCell align="center">{row.team}</TableCell>
+                      <TableCell align="left"><Team name={row.team}/></TableCell>
                       {
                         // Points
                       }
-                      <TableCell align="center">{row.points}</TableCell>
+                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR,  width: '70px' }}>{row.points}</TableCell>
                       {
                         // Points lost - only if largeScreen
                       }
@@ -256,7 +264,7 @@ export default function StandingsTable(props) {
                       {
                         // Games
                       }
-                      <TableCell align="center">{row.matches}</TableCell>
+                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.matches}</TableCell>
                       {
                         // Victories
                       }
@@ -264,7 +272,7 @@ export default function StandingsTable(props) {
                       {
                         // Draws
                       }
-                      <TableCell align="center">{row.draws}</TableCell>
+                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.draws}</TableCell>
                       {
                         // Losses
                       }
@@ -274,7 +282,7 @@ export default function StandingsTable(props) {
                       }
                       {
                         largeScreen.width &&
-                        <TableCell align="center">{row.goalsFor}</TableCell>
+                        <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.goalsFor}</TableCell>
                       }
                       {
                         // Goals against - only if largeScreen
@@ -286,7 +294,7 @@ export default function StandingsTable(props) {
                       {
                         // Goal difference
                       }
-                      <TableCell align="center">{row.goalDifference}</TableCell>
+                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.goalDifference}</TableCell>
                       {
                         // Percent - only if largeScreen
                       }
@@ -306,5 +314,5 @@ export default function StandingsTable(props) {
 }
 
 StandingsTable.propTypes = {
-  title: PropTypes.string.isRequired,
+  data: PropTypes.array.isRequired
 };

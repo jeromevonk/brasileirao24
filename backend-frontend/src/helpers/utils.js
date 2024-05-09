@@ -56,7 +56,7 @@ function customComparator(a, b, order, orderBy) {
   }
 
   const multiplier = order === 'desc' ? 1 : -1;
-  
+
   if (y < x) {
     return -1 * multiplier;
   }
@@ -76,7 +76,13 @@ function sortByPoints(a, b, order, orderBy) {
     pointsLostMultiplier = -1;
   }
   
-  // First, compare points
+  // Compare by this order:
+  // - Points
+  // - Victories (greater is better)
+  // - Goal difference (greater is better)
+  // - Goals for (greater is better)
+
+
   if (Number(a[orderBy]) > Number(b[orderBy])) {
     return -1 * orderMultiplier;
   } else if (Number(a[orderBy]) < Number(b[orderBy])) {
