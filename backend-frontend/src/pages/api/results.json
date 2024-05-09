@@ -1,0 +1,3118 @@
+{
+  "1": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Bahia",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-13",
+      "started": true
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Juventude",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-13",
+      "started": true
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Bragantino",
+      "homeScore": 2,
+      "awayScore": 2,
+      "date": "2024-04-13",
+      "started": true
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Fortaleza",
+      "homeScore": 1,
+      "awayScore": 2,
+      "date": "2024-04-13",
+      "started": true
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Grêmio",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-14",
+      "started": true
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Atlético-MG",
+      "homeScore": 0,
+      "awayScore": 0,
+      "date": "2024-04-14",
+      "started": true
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Cuiabá",
+      "homeScore": 4,
+      "awayScore": 0,
+      "date": "2024-04-14",
+      "started": true
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Flamengo",
+      "homeScore": 1,
+      "awayScore": 2,
+      "date": "2024-04-14",
+      "started": true
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Botafogo",
+      "homeScore": 3,
+      "awayScore": 2,
+      "date": "2024-04-14",
+      "started": true
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Palmeiras",
+      "homeScore": 0,
+      "awayScore": 1,
+      "date": "2024-04-14",
+      "started": true
+    }
+  ],
+  "2": [
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Fluminense",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-16",
+      "started": true
+    },
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Athletico-PR",
+      "homeScore": 2,
+      "awayScore": 0,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Vasco",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Criciúma",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Internacional",
+      "homeScore": 0,
+      "awayScore": 1,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Cruzeiro",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Corinthians",
+      "homeScore": 2,
+      "awayScore": 0,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "São Paulo",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-17",
+      "started": true
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Atlético-GO",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-04-18",
+      "started": true
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "3": [
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Vasco",
+      "homeScore": 2,
+      "awayScore": 1,
+      "date": "2024-04-20",
+      "started": true
+    },
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Cuiabá",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-04-20",
+      "started": true
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Corinthians",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-04-20",
+      "started": true
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Cruzeiro",
+      "homeScore": 3,
+      "awayScore": 0,
+      "date": "2024-04-20",
+      "started": true
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Bahia",
+      "homeScore": 2,
+      "awayScore": 2,
+      "date": "2024-04-21",
+      "started": true
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Flamengo",
+      "homeScore": 0,
+      "awayScore": 0,
+      "date": "2024-04-21",
+      "started": true
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Internacional",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-04-21",
+      "started": true
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Juventude",
+      "homeScore": 5,
+      "awayScore": 1,
+      "date": "2024-04-21",
+      "started": true
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "São Paulo",
+      "homeScore": 0,
+      "awayScore": 3,
+      "date": "2024-04-21",
+      "started": true
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "4": [
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Criciúma",
+      "homeScore": 0,
+      "awayScore": 4,
+      "date": "2024-04-27",
+      "started": true
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Atlético-MG",
+      "homeScore": 0,
+      "awayScore": 3,
+      "date": "2024-04-27",
+      "started": true
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Grêmio",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-04-27",
+      "started": true
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Botafogo",
+      "homeScore": 0,
+      "awayScore": 2,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Vitória",
+      "homeScore": 3,
+      "awayScore": 1,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Fluminense",
+      "homeScore": 3,
+      "awayScore": 0,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Bragantino",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Athletico-PR",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Atlético-GO",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-04-28",
+      "started": true
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Palmeiras",
+      "homeScore": 0,
+      "awayScore": 0,
+      "date": "2024-04-29",
+      "started": true
+    }
+  ],
+  "5": [
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Atlético-MG",
+      "homeScore": 2,
+      "awayScore": 2,
+      "date": "2024-05-04",
+      "started": true
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Flamengo",
+      "homeScore": 1,
+      "awayScore": 1,
+      "date": "2024-05-04",
+      "started": true
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Fortaleza",
+      "homeScore": 0,
+      "awayScore": 0,
+      "date": "2024-05-04",
+      "started": true
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "São Paulo",
+      "homeScore": 1,
+      "awayScore": 3,
+      "date": "2024-05-05",
+      "started": true
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Vasco",
+      "homeScore": 1,
+      "awayScore": 0,
+      "date": "2024-05-05",
+      "started": true
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Bahia",
+      "homeScore": 1,
+      "awayScore": 2,
+      "date": "2024-05-05",
+      "started": true
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Palmeiras",
+      "homeScore": 0,
+      "awayScore": 2,
+      "date": "2024-05-05",
+      "started": true
+    },
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "6": [
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-11",
+      "started": false
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-12",
+      "started": false
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-12",
+      "started": false
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-12",
+      "started": false
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-12",
+      "started": false
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-12",
+      "started": false
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-13",
+      "started": false
+    },
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "7": [
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-18",
+      "started": false
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-18",
+      "started": false
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-18",
+      "started": false
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-19",
+      "started": false
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-19",
+      "started": false
+    },
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "8": [
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-25",
+      "started": false
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-25",
+      "started": false
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-26",
+      "started": false
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-26",
+      "started": false
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-05-26",
+      "started": false
+    },
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": null,
+      "started": null
+    }
+  ],
+  "9": [
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-01",
+      "started": false
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-01",
+      "started": false
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-01",
+      "started": false
+    },
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-01",
+      "started": false
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-02",
+      "started": false
+    }
+  ],
+  "10": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-12",
+      "started": null
+    }
+  ],
+  "11": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-16",
+      "started": null
+    }
+  ],
+  "12": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-19",
+      "started": null
+    }
+  ],
+  "13": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-23",
+      "started": null
+    }
+  ],
+  "14": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-26",
+      "started": null
+    }
+  ],
+  "15": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-06-30",
+      "started": null
+    }
+  ],
+  "16": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-03",
+      "started": null
+    }
+  ],
+  "17": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-07",
+      "started": null
+    }
+  ],
+  "18": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-10",
+      "started": null
+    }
+  ],
+  "19": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-17",
+      "started": null
+    }
+  ],
+  "20": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-21",
+      "started": null
+    }
+  ],
+  "21": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-07-28",
+      "started": null
+    }
+  ],
+  "22": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-04",
+      "started": null
+    }
+  ],
+  "23": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-11",
+      "started": null
+    }
+  ],
+  "24": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-18",
+      "started": null
+    }
+  ],
+  "25": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-08-25",
+      "started": null
+    }
+  ],
+  "26": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-01",
+      "started": null
+    }
+  ],
+  "27": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-15",
+      "started": null
+    }
+  ],
+  "28": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-22",
+      "started": null
+    }
+  ],
+  "29": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-09-29",
+      "started": null
+    }
+  ],
+  "30": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-05",
+      "started": null
+    }
+  ],
+  "31": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-20",
+      "started": null
+    }
+  ],
+  "32": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-10-26",
+      "started": null
+    }
+  ],
+  "33": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-06",
+      "started": null
+    }
+  ],
+  "34": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-20",
+      "started": null
+    }
+  ],
+  "35": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-11-24",
+      "started": null
+    }
+  ],
+  "36": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-01",
+      "started": null
+    }
+  ],
+  "37": [
+    {
+      "homeTeam": "Internacional",
+      "awayTeam": "Botafogo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Cruzeiro",
+      "awayTeam": "Palmeiras",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Vitória",
+      "awayTeam": "Grêmio",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Fluminense",
+      "awayTeam": "Cuiabá",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Vasco",
+      "awayTeam": "Atlético-MG",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Corinthians",
+      "awayTeam": "Bahia",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "São Paulo",
+      "awayTeam": "Juventude",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Athletico-PR",
+      "awayTeam": "Bragantino",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-GO",
+      "awayTeam": "Fortaleza",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    },
+    {
+      "homeTeam": "Criciúma",
+      "awayTeam": "Flamengo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-04",
+      "started": null
+    }
+  ],
+  "38": [
+    {
+      "homeTeam": "Grêmio",
+      "awayTeam": "Corinthians",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Atlético-MG",
+      "awayTeam": "Athletico-PR",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Bahia",
+      "awayTeam": "Atlético-GO",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Flamengo",
+      "awayTeam": "Vitória",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Botafogo",
+      "awayTeam": "São Paulo",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Palmeiras",
+      "awayTeam": "Fluminense",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Bragantino",
+      "awayTeam": "Criciúma",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Fortaleza",
+      "awayTeam": "Internacional",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Cuiabá",
+      "awayTeam": "Vasco",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    },
+    {
+      "homeTeam": "Juventude",
+      "awayTeam": "Cruzeiro",
+      "homeScore": null,
+      "awayScore": null,
+      "date": "2024-12-08",
+      "started": null
+    }
+  ]
+}
