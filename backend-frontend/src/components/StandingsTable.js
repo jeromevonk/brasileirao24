@@ -300,7 +300,7 @@ export default function StandingsTable(props) {
                       }
                       {
                         largeScreen.width &&
-                        <TableCell align="center">{Math.round((100 * row.points) / (row.matches * 3) * 10) / 10}</TableCell>
+                        <TableCell align="center">{row.percent}</TableCell>
                       }
                     </StyledTableRow>
                   );

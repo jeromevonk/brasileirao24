@@ -51,7 +51,7 @@ function getStandings(matches, option, subOption) {
 
   // Calculate percents
   for (const [key, value] of Object.entries(standings)) {
-    standings[key].percent = Math.round((100 * value.points) / (value.matches * 3) * 10) / 10
+    standings[key].percent = value.matches == 0 ? 0 : Math.round((100 * value.points) / (value.matches * 3) * 10) / 10;
   }
 
   // Convert 

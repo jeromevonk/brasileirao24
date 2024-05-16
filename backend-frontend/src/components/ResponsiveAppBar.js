@@ -40,7 +40,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            BRASILEIRÃO 23
+            BRASILEIRÃO 2024
           </Typography> 
         </Toolbar>
       </Container>

@@ -36,4 +36,3 @@ export default function Team(props) {
     </Box>
   );
 }
-getBadge
