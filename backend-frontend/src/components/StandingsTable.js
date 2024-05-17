@@ -48,13 +48,6 @@ function StandingsTableHead(props) {
       label: 'PTS',
     },
     {
-      id: 'pointsLost',
-      numeric: false,
-      disablePadding: false,
-      label: 'PP',
-      onlyLargeScreen: true
-    },
-    {
       id: 'matches',
       numeric: false,
       disablePadding: false,
@@ -97,6 +90,13 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'SG',
+    },
+    {
+      id: 'pointsLost',
+      numeric: false,
+      disablePadding: false,
+      label: 'PP',
+      onlyLargeScreen: true
     },
     {
       id: 'percent',
