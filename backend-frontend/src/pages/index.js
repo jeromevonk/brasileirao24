@@ -11,6 +11,7 @@ import { AppContext } from 'src/pages/_app';
 
 export async function getServerSideProps() {
   const matches = await matchesService.getMatches();
+  // const matches = await matchesService.getMatchesHardcoded();
 
   return {
     props: {

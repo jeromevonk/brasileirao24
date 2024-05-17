@@ -160,11 +160,19 @@ function convertStandingsToArray(standings) {
 }
 
 function emptyStandings() {
-  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0 }
+  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, "badge": "", "initials": "" }
 }
 
 function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit) {
   const { homeTeam, awayTeam, homeScore, awayScore, started, date } = match;
+
+  // Check if badge and initials are saved
+  if (!standings[homeTeam].badge) standings[homeTeam].badge = match.homeTeamBadge;
+  if (!standings[homeTeam].initials) standings[homeTeam].initials = match.homeTeamInitials;
+
+  if (!standings[awayTeam].badge) standings[awayTeam].badge = match.awayTeamBadge;
+  if (!standings[awayTeam].initials) standings[awayTeam].initials = match.awayTeamInitials;
+
 
   // If the game has started 
   // AND

@@ -17,7 +17,6 @@ import {
 } from 'src/helpers'
 
 
-const BACKGROUND_COLOR_HEAD = "#ffffff";
 const BACKGROUND_COLOR = "#f2f2f2";
 
 function StandingsTableHead(props) {
@@ -49,7 +48,6 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'PTS',
-      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'pointsLost',
@@ -63,7 +61,6 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'J',
-      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'victories',
@@ -76,7 +73,6 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'E',
-      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'losses',
@@ -90,7 +86,6 @@ function StandingsTableHead(props) {
       disablePadding: false,
       label: 'GP',
       onlyLargeScreen: true,
-      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'goalsAgainst',
@@ -104,7 +99,6 @@ function StandingsTableHead(props) {
       numeric: false,
       disablePadding: false,
       label: 'SG',
-      backgroundColor: BACKGROUND_COLOR_HEAD,
     },
     {
       id: 'percent',
@@ -169,20 +163,9 @@ export default function StandingsTable(props) {
 
   const rows = props.data || [];
 
-
-  // ----------------------------------------
-  //  Style for table rows
-  // ----------------------------------------
-  const StyledTableRow = styled(TableRow)(({ theme: appTheme }) => ({
-    // '&:nth-of-type(odd)': {
-    //   backgroundColor: appTheme.palette.action.hover,
-    // },
-
-    // hide last border
-    '&:last-child td, &:last-child th': {
-      border: 0,
-    },
-  }));
+  const CustomTableCell = styled(TableCell)({
+    "borderLeft": '1px dotted grey',
+  });
 
   // ----------------------------------------
   //  Button handlers
@@ -214,7 +197,7 @@ export default function StandingsTable(props) {
   };
 
   return (
-    <Box sx={{ width: '75%' }}>
+    <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
         <TableContainer>
           <Table
@@ -235,7 +218,7 @@ export default function StandingsTable(props) {
                 .sort(getComparator(order, orderBy))
                 .map((row, index) => {
                   return (
-                    <StyledTableRow
+                    <TableRow
                       hover
                       onClick={(event) => handleClick(event, row.id)}
                       role="checkbox"
@@ -249,11 +232,11 @@ export default function StandingsTable(props) {
                       {
                         // Team
                       }
-                      <TableCell align="left"><Team name={row.team}/></TableCell>
+                      <TableCell align="left"><Team name={largeScreen.width ? row.team : row.initials} badge={row.badge} /></TableCell>
                       {
                         // Points
                       }
-                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR,  width: '70px' }}>{row.points}</TableCell>
+                      <CustomTableCell align="center">{row.points}</CustomTableCell>
                       {
                         // Points lost - only if largeScreen
                       }
@@ -264,37 +247,37 @@ export default function StandingsTable(props) {
                       {
                         // Games
                       }
-                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.matches}</TableCell>
+                      <CustomTableCell align="center">{row.matches}</CustomTableCell>
                       {
                         // Victories
                       }
-                      <TableCell align="center">{row.victories}</TableCell>
+                      <CustomTableCell align="center">{row.victories}</CustomTableCell>
                       {
                         // Draws
                       }
-                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.draws}</TableCell>
+                      <CustomTableCell align="center">{row.draws}</CustomTableCell>
                       {
                         // Losses
                       }
-                      <TableCell align="center">{row.losses}</TableCell>
+                      <CustomTableCell align="center">{row.losses}</CustomTableCell>
                       {
                         // Goals for - only if largeScreen
                       }
                       {
                         largeScreen.width &&
-                        <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.goalsFor}</TableCell>
+                        <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
                       }
                       {
                         // Goals against - only if largeScreen
                       }
                       {
                         largeScreen.width &&
-                        <TableCell align="center">{row.goalsAgainst}</TableCell>
+                        <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
                       }
                       {
                         // Goal difference
                       }
-                      <TableCell align="center" sx={{ backgroundColor: BACKGROUND_COLOR }}>{row.goalDifference}</TableCell>
+                      <CustomTableCell align="center">{row.goalDifference}</CustomTableCell>
                       {
                         // Percent - only if largeScreen
                       }
@@ -302,7 +285,7 @@ export default function StandingsTable(props) {
                         largeScreen.width &&
                         <TableCell align="center">{row.percent}</TableCell>
                       }
-                    </StyledTableRow>
+                    </TableRow>
                   );
                 })}
             </TableBody>
