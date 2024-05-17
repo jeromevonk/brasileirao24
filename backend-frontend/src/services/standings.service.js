@@ -38,6 +38,7 @@ function getStandings(matches, option, subOption) {
 
   for (const team of TEAMS) {
     standings[team] = emptyStandings()
+    // TODO: colocar badge e iniciais aqui, hardcoded
   }
 
   // If there are matches, iterate through

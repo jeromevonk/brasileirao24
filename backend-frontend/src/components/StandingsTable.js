@@ -17,8 +17,6 @@ import {
 } from 'src/helpers'
 
 
-const BACKGROUND_COLOR = "#f2f2f2";
-
 function StandingsTableHead(props) {
   const {
     order,
@@ -238,13 +236,6 @@ export default function StandingsTable(props) {
                       }
                       <CustomTableCell align="center">{row.points}</CustomTableCell>
                       {
-                        // Points lost - only if largeScreen
-                      }
-                      {
-                        largeScreen.width &&
-                        <TableCell align="center">{row.pointsLost}</TableCell>
-                      }
-                      {
                         // Games
                       }
                       <CustomTableCell align="center">{row.matches}</CustomTableCell>
@@ -278,6 +269,13 @@ export default function StandingsTable(props) {
                         // Goal difference
                       }
                       <CustomTableCell align="center">{row.goalDifference}</CustomTableCell>
+                      {
+                        // Points lost - only if largeScreen
+                      }
+                      {
+                        largeScreen.width &&
+                        <CustomTableCell align="center">{row.pointsLost}</CustomTableCell>
+                      }
                       {
                         // Percent - only if largeScreen
                       }
