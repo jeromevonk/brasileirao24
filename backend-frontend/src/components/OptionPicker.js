@@ -149,7 +149,7 @@ export default function OptionPicker(props) {
   // Custom padding
   const padding = { padding: { xs: '7px 4px', md: '7px 20px' } };
   return (
-    <Box sx={{ width: '75%' }}>
+    <Box sx={{ width: '100%' }}>
       <Stack>
         <Grid
           sx={{

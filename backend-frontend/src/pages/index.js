@@ -34,9 +34,9 @@ function Index(props) {
       setSelectedOption(value)
 
       // Default values for subOptions
-      if (value === 6) setSelectedSubOption(10)
-      if (value === 7) setSelectedSubOption(30)
-      if (value === 8) setSelectedSubOption(new Date(2023, 11, 5))
+      if (value === 6) setSelectedSubOption(5)
+      if (value === 7) setSelectedSubOption(3)
+      if (value === 8) setSelectedSubOption(new Date(2024, 4, 22))
     } else {
       setSelectedSubOption(value)
     }

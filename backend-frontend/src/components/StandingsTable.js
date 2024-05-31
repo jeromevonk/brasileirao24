@@ -31,77 +31,53 @@ function StandingsTableHead(props) {
   const headCells = [
     {
       id: 'rank',
-      numeric: false,
-      disablePadding: false,
       label: '',
     },
     {
       id: 'team',
-      numeric: false,
-      disablePadding: false,
       label: 'Team',
     },
     {
       id: 'points',
-      numeric: false,
-      disablePadding: false,
-      label: 'PTS',
+      label: 'P',
     },
     {
       id: 'matches',
-      numeric: false,
-      disablePadding: false,
       label: 'J',
     },
     {
       id: 'victories',
-      numeric: false,
-      disablePadding: false,
       label: 'V',
     },
     {
       id: 'draws',
-      numeric: false,
-      disablePadding: false,
       label: 'E',
     },
     {
       id: 'losses',
-      numeric: false,
-      disablePadding: false,
       label: 'D',
     },
     {
       id: 'goalsFor',
-      numeric: false,
-      disablePadding: false,
       label: 'GP',
       onlyLargeScreen: true,
     },
     {
       id: 'goalsAgainst',
-      numeric: false,
-      disablePadding: false,
       label: 'GC',
       onlyLargeScreen: true,
     },
     {
       id: 'goalDifference',
-      numeric: false,
-      disablePadding: false,
       label: 'SG',
     },
     {
       id: 'pointsLost',
-      numeric: false,
-      disablePadding: false,
       label: 'PP',
       onlyLargeScreen: true
     },
     {
       id: 'percent',
-      numeric: false,
-      disablePadding: false,
       label: '%',
       onlyLargeScreen: true,
     },
@@ -116,12 +92,10 @@ function StandingsTableHead(props) {
           return (
             <TableCell
               key={headCell.id}
-              align={headCell.numeric ? 'right' : 'center'}
-              padding={headCell.disablePadding ? 'none' : 'normal'}
+              align='center'
+              padding='checkbox'
               sortDirection={orderBy === headCell.id ? order : false}
               sx={{backgroundColor: headCell.backgroundColor }}
-                
-              // sx={{ width: '10px' }} TODO
             >
               <TableSortLabel
                 active={orderBy === headCell.id}
@@ -129,6 +103,8 @@ function StandingsTableHead(props) {
                 onClick={createSortHandler(headCell.id)}
                 sx={{
                   flexDirection: 'row-reverse',
+                  // justifyContent: 'center',
+                  // alignItems: 'center',
                 }}
               >
                 {headCell.label}
