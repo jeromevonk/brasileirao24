@@ -258,7 +258,7 @@ export default function StandingsTable(props) {
                       }
                       {
                         largeScreen.width &&
-                        <TableCell align="center">{row.percent}</TableCell>
+                        <CustomTableCell align="center">{row.percent}</CustomTableCell>
                       }
                     </TableRow>
                   );
