@@ -104,8 +104,6 @@ function StandingsTableHead(props) {
                 onClick={createSortHandler(headCell.id)}
                 sx={{
                   flexDirection: 'row-reverse',
-                  // justifyContent: 'center',
-                  // alignItems: 'center',
                 }}
               >
                 {headCell.label}
