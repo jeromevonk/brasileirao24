@@ -60,12 +60,10 @@ function StandingsTableHead(props) {
     {
       id: 'goalsFor',
       label: 'GP',
-      onlyLargeScreen: true,
     },
     {
       id: 'goalsAgainst',
       label: 'GC',
-      onlyLargeScreen: true,
     },
     {
       id: 'goalDifference',
@@ -230,14 +228,12 @@ export default function StandingsTable(props) {
                         // Goals for - only if largeScreen
                       }
                       {
-                        largeScreen.width &&
                         <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
                       }
                       {
                         // Goals against - only if largeScreen
                       }
                       {
-                        largeScreen.width &&
                         <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
                       }
                       {
