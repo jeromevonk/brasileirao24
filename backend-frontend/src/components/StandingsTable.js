@@ -234,7 +234,7 @@ export default function StandingsTable(props) {
                         // Goals against - only if largeScreen
                       }
                       {
-                        <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
+                        <CustomTableCell align="center">{row.goalsAgainst}</CustomTableCell>
                       }
                       {
                         // Goal difference
