@@ -167,6 +167,23 @@ export default function StandingsTable(props) {
     setSelected(newSelected);
   };
 
+  // -----------------------------------
+  // Cell color
+  // -----------------------------------
+  const getCellColor = (index) => {
+    if (index <= 4) {
+      return 'blue';
+    } else if (index <= 6) {
+      return 'lightblue';
+    } else if (index <= '12') {
+      return 'green';
+    } else if (index <= 16) {
+      return 'black';
+    } else {
+      return 'red';
+    }
+  };
+
   return (
     <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
@@ -199,7 +216,7 @@ export default function StandingsTable(props) {
                       {
                         // Rank
                       }
-                      <TableCell align="center">{index + 1}</TableCell>
+                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index+1) }}>{index + 1}</TableCell>
                       {
                         // Team
                       }
