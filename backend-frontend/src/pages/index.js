@@ -2,16 +2,13 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import LinearProgress from '@mui/material/LinearProgress';
 import StandingsTable from '../components/StandingsTable';
 import OptionPicker from '../components/OptionPicker';
 import { matchesService, standingsService } from 'src/services';
 import { withRouter } from 'next/router'
-import { AppContext } from 'src/pages/_app';
 
 export async function getServerSideProps() {
   const matches = await matchesService.getMatches();
-  // const matches = await matchesService.getMatchesHardcoded();
 
   return {
     props: {
@@ -21,8 +18,6 @@ export async function getServerSideProps() {
 }
 
 function Index(props) {
-  // Context
-  const context = React.useContext(AppContext);
   const [standings, setStandings] = React.useState([]);
   const [selectedOption, setSelectedOption] = React.useState(1);
   const [selectedSubOption, setSelectedSubOption] = React.useState(1);

@@ -5,7 +5,6 @@ const baseUrl = `${publicRuntimeConfig.apiUrl}/matches`;
 
 export const matchesService = {
   getMatches,
-  getMatchesHardcoded,
 };
 
 async function getMatches() {
@@ -19,10 +18,4 @@ async function getMatches() {
     console.error('Error fetching matches:', error);
     throw error;
   }
-}
-
-
-async function getMatchesHardcoded() {
-  const jsonData = require('../pages/api/results.json'); // TODOOOO
-  return jsonData;
 }
