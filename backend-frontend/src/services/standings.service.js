@@ -43,7 +43,9 @@ function getStandings(matches, option, subOption) {
     standings[key].badge = value.badge
   }
 
+  // ----------------------------------------------
   // If there are matches, iterate through
+  // ----------------------------------------------
   if (Object.keys(matches).length !== 0) {
     if (ITERATE_BY_ROUNDS.includes(option)) {
       iterateByRounds(standings, matches, option, subOption);
@@ -52,7 +54,9 @@ function getStandings(matches, option, subOption) {
     }
   }
 
+  // ----------------------------------------------
   // Calculate percents
+  // ----------------------------------------------
   for (const [key, value] of Object.entries(standings)) {
     standings[key].percent = value.matches == 0 ? 0 : Math.round((100 * value.points) / (value.matches * 3) * 10) / 10;
   }
@@ -65,6 +69,49 @@ function getStandings(matches, option, subOption) {
 // Iterate by round in crescent order
 // -----------------------------------------------
 function iterateByRounds(standings, matches, option, subOption) {
+  const details = getDetailsFromOptions(option, subOption)
+
+  for (let i = details.startRound; i <= details.endRound; i++) {
+    const round = matches[i];
+
+    for (const match of round) {
+      calculateMatch(standings, match, details.calculateHome, details.calculateAway, details.dateLimit)
+    }
+  }
+}
+
+// -----------------------------------------------
+// Iterate by team
+// -----------------------------------------------
+function iterateByTeam(standings, matches, _option, subOption) {
+  // Get matches ordered by descending date
+  const startedMatches = getStartedMatchesInDescendingOrder(matches);
+  
+  // For every team
+  for (const team of Object.keys(standings)) {
+    let toFind = subOption;
+
+    // Look for last X matches
+    for (let i = 0; i < startedMatches.length && toFind > 0; i++) {
+      const match = startedMatches[i];
+      
+      // Did the team play at home, away?
+      if (team === match.homeTeam) {
+        calculateMatch(standings, match, true, false, false);
+        toFind--;
+      } else if(team === match.awayTeam) {
+        calculateMatch(standings, match, false, true, false);
+        toFind--;
+      }
+    }
+  }
+}
+
+
+// -----------------------------------------------
+// Util
+// -----------------------------------------------
+function getDetailsFromOptions(option, subOption ) {
   const details = {
     startRound: 1,
     endRound: 38,
@@ -103,67 +150,28 @@ function iterateByRounds(standings, matches, option, subOption) {
       break;
 
     case 8:
-      details.dateLimit = format(subOption, 'yyyy-MM-dd'); 
+      details.dateLimit = format(subOption, 'yyyy-MM-dd');
       break;
   }
 
-  for (let i = details.startRound; i <= details.endRound; i++) {
-    const round = matches[i];
-
-    for (const match of round) {
-      calculateMatch(standings, match, details.calculateHome, details.calculateAway, details.dateLimit)
-    }
-  }
+  return details
 }
 
-// -----------------------------------------------
-// Iterate by team
-// -----------------------------------------------
-function iterateByTeam(standings, matches, _option, subOption) {
-  // Get matches order by date in descending order
-  const sortedMatches = getMatchesInDescendingOrder(matches);
-
-  // Get array of teams
-  const teamNames = Object.keys(standings);
-  
-  // For every team
-  for (const team of teamNames) {
-    let toFind = subOption;
-
-    // Look for last X matches
-    for (let i = 0; i < sortedMatches.length && toFind > 0; i++) {
-      const match = sortedMatches[i];
-      
-      // Did the team play at home, away?
-      if (team === match.homeTeam) {
-        calculateMatch(standings, match, true, false, false);
-        toFind--;
-      } else if(team === match.awayTeam) {
-        calculateMatch(standings, match, false, true, false);
-        toFind--;
-      }
-    }
-  }
-}
-
-// -----------------------------------------------
-// Util
-// -----------------------------------------------
 function convertStandingsToArray(standings) {
   // Convert 
-  const sorted = [];
+  const standingArray = [];
   for (const [key, value] of Object.entries(standings)) {
-    sorted.push({
+    standingArray.push({
       team: key,
       ...value
     })
   }
 
-  return sorted;
+  return standingArray;
 }
 
 function emptyStandings() {
-  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, "badge": "", "initials": "" }
+  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, lastMatches:  [], "badge": "", "initials": "" }
 }
 
 function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit) {
@@ -177,10 +185,41 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
   if (started && !(dateLimit && date > dateLimit)) {
 
     // The home team
-    if (calculateHome) calculateStandings(standings[homeTeam], homeScore, awayScore)
+    if (calculateHome) {
+      
+      // Calculate standings
+      calculateStandings(standings[homeTeam], homeScore, awayScore);
+
+      // Add to last matches
+      standings[homeTeam].lastMatches.push({
+        outcome: getOutcome(homeScore, awayScore),
+        tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
+      })
+    }
 
     // The away team
-    if (calculateAway) calculateStandings(standings[awayTeam], awayScore, homeScore)
+    if (calculateAway) {
+      
+      // Calculate standings
+      calculateStandings(standings[awayTeam], awayScore, homeScore);
+
+      // Add to last matches
+      standings[awayTeam].lastMatches.push({
+        outcome: getOutcome(awayScore, homeScore),
+        tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
+      })
+    }
+  }
+}
+
+function getOutcome(score, oponentScoreScore,) {
+  if (score > oponentScoreScore) {
+    return 'V'
+  }
+  else if (score < oponentScoreScore) {
+    return 'D'
+  } else {
+    return 'E';
   }
 }
 
@@ -203,7 +242,6 @@ function getResults(score, oponentScore) {
     results.points = 1
     results.pointsLost = 2
     results.draw = 1
-
   } else {
     results.pointsLost = 3
     results.loss = 1
@@ -225,7 +263,7 @@ function calculateStandings(team, score, oponentScore) {
   team.goalDifference += results.goalDifference
 }
 
-function getMatchesInDescendingOrder(matches) {
+function getStartedMatchesInDescendingOrder(matches) {
   // Flatten the matches
   const matchesArray = Object.values(matches).flat();
 

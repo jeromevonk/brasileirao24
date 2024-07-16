@@ -9,7 +9,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableSortLabel from '@mui/material/TableSortLabel';
+import Tooltip from '@mui/material/Tooltip';
 import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import {
@@ -78,6 +80,10 @@ function StandingsTableHead(props) {
       id: 'percent',
       label: '%',
       onlyLargeScreen: true,
+    },
+    {
+      id: 'streak',
+      label: 'Últimos J',
     },
   ];
 
@@ -166,6 +172,43 @@ export default function StandingsTable(props) {
 
     setSelected(newSelected);
   };
+
+  const getStreak = (matchesList) => {
+
+    const getColor = (outcome) => {
+      switch (outcome) {
+        case 'E':
+          return 'black'; 
+        case 'V':
+          return 'green'; 
+        case 'D':
+          return 'red'; 
+        default:
+          return 'black';
+      }
+    };
+
+    // Reverse, so most recent to the end
+    // const reversed = [...matchesList].reverse();
+
+    return (
+      <Stack direction="row" spacing={1}>
+        {matchesList.map((match, index) => (
+          <Tooltip key={index} title={match.tooltip}>
+            <div
+              style={{
+                width: '10px',
+                height: '10px',
+                borderRadius: '40%',
+                backgroundColor: getColor(match.outcome)
+              }}
+            ></div>
+          </Tooltip>
+        ))}
+      </Stack>
+    );
+  };
+
 
   // -----------------------------------
   // Cell color
@@ -271,6 +314,10 @@ export default function StandingsTable(props) {
                         largeScreen.width &&
                         <CustomTableCell align="center">{row.percent}</CustomTableCell>
                       }
+                      {
+                        // Streak
+                      }
+                      <CustomTableCell>{getStreak(row.lastMatches)}</CustomTableCell>
                     </TableRow>
                   );
                 })}
