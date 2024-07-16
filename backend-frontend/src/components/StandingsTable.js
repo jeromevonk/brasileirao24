@@ -14,7 +14,6 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFutbol as faSolidFutbol } from '@fortawesome/free-solid-svg-icons';
-import { faFutbol as faRegularFutbol } from '@fortawesome/free-regular-svg-icons';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import {
@@ -203,8 +202,7 @@ export default function StandingsTable(props) {
               justifyContent: 'center',
             }}>
               <FontAwesomeIcon
-                icon={match.isHome ? faSolidFutbol: faRegularFutbol}
-                opacity={match.isHome ? 1 : 0.8}
+                icon={faSolidFutbol}
                 style={{ color: getColor(match.outcome), fontSize: '14px' }}
               />
             </div>
