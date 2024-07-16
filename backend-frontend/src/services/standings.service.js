@@ -192,6 +192,7 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
 
       // Add to last matches
       standings[homeTeam].lastMatches.push({
+        isHome: true,
         outcome: getOutcome(homeScore, awayScore),
         tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
       })
@@ -205,6 +206,7 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
 
       // Add to last matches
       standings[awayTeam].lastMatches.push({
+        isHome: false,
         outcome: getOutcome(awayScore, homeScore),
         tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
       })

@@ -173,7 +173,7 @@ export default function StandingsTable(props) {
     setSelected(newSelected);
   };
 
-  const getStreak = (matchesList) => {
+  const getStreak = (matchList, isLarge) => {
 
     const getColor = (outcome) => {
       switch (outcome) {
@@ -188,19 +188,23 @@ export default function StandingsTable(props) {
       }
     };
 
-    // Reverse, so most recent to the end
-    // const reversed = [...matchesList].reverse();
+    const getShape = (isHome) => {
+      return isHome ? '40%' : '10%'; // Circle for home, square for away
+    };
+
+    const itens = isLarge? matchList : matchList.slice(-5)
 
     return (
-      <Stack direction="row" spacing={1}>
-        {matchesList.map((match, index) => (
+      <Stack direction="row" spacing={0.7}>
+        {itens.map((match, index) => (
           <Tooltip key={index} title={match.tooltip}>
             <div
               style={{
-                width: '10px',
-                height: '10px',
-                borderRadius: '40%',
-                backgroundColor: getColor(match.outcome)
+                width: '11px',
+                height: '11px',
+                borderRadius: getShape(match.isHome),
+                backgroundColor: getColor(match.outcome),
+                boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
               }}
             ></div>
           </Tooltip>
@@ -317,7 +321,7 @@ export default function StandingsTable(props) {
                       {
                         // Streak
                       }
-                      <CustomTableCell>{getStreak(row.lastMatches)}</CustomTableCell>
+                      <CustomTableCell>{getStreak(row.lastMatches, largeScreen.width)}</CustomTableCell>
                     </TableRow>
                   );
                 })}
