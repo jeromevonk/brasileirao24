@@ -12,6 +12,9 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import Tooltip from '@mui/material/Tooltip';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFutbol as faSolidFutbol } from '@fortawesome/free-solid-svg-icons';
+import { faFutbol as faRegularFutbol } from '@fortawesome/free-regular-svg-icons';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import {
@@ -99,7 +102,7 @@ function StandingsTableHead(props) {
               align='center'
               padding='checkbox'
               sortDirection={orderBy === headCell.id ? order : false}
-              sx={{backgroundColor: headCell.backgroundColor }}
+              sx={{ backgroundColor: headCell.backgroundColor }}
             >
               <TableSortLabel
                 active={orderBy === headCell.id}
@@ -178,35 +181,33 @@ export default function StandingsTable(props) {
     const getColor = (outcome) => {
       switch (outcome) {
         case 'E':
-          return 'black'; 
+          return 'black';
         case 'V':
-          return 'green'; 
+          return 'green';
         case 'D':
-          return 'red'; 
+          return 'red';
         default:
           return 'black';
       }
     };
 
-    const getShape = (isHome) => {
-      return isHome ? '40%' : '10%'; // Circle for home, square for away
-    };
-
-    const itens = isLarge? matchList : matchList.slice(-5)
+    const itens = isLarge ? matchList : matchList.slice(-5)
 
     return (
       <Stack direction="row" spacing={0.7}>
         {itens.map((match, index) => (
           <Tooltip key={index} title={match.tooltip}>
-            <div
-              style={{
-                width: '11px',
-                height: '11px',
-                borderRadius: getShape(match.isHome),
-                backgroundColor: getColor(match.outcome),
-                boxShadow: '2px 2px 5px rgba(0, 0, 0, 0.5)',
-              }}
-            ></div>
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'center',
+            }}>
+              <FontAwesomeIcon
+                icon={match.isHome ? faSolidFutbol: faRegularFutbol}
+                opacity={match.isHome ? 1 : 0.8}
+                style={{ color: getColor(match.outcome), fontSize: '14px' }}
+              />
+            </div>
           </Tooltip>
         ))}
       </Stack>
@@ -263,7 +264,7 @@ export default function StandingsTable(props) {
                       {
                         // Rank
                       }
-                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index+1) }}>{index + 1}</TableCell>
+                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index + 1) }}>{index + 1}</TableCell>
                       {
                         // Team
                       }
