@@ -19,21 +19,26 @@ export async function getServerSideProps() {
 
 function Index(props) {
   const [standings, setStandings] = React.useState([]);
-  const [selectedOption, setSelectedOption] = React.useState(1);
-  const [selectedSubOption, setSelectedSubOption] = React.useState(1);
+  const [selected, setSelected] = React.useState({option: 1, subOption: 1});
 
   const { matches } = props;
 
   const handleChange = (name, value) => {
     if (name === 'option') {
-      setSelectedOption(value)
+      setSelected((prevSelected) => {
+        const newValues = { ...prevSelected, option: value };
 
-      // Default values for subOptions
-      if (value === 6) setSelectedSubOption(5)
-      if (value === 7) setSelectedSubOption(3)
-      if (value === 8) setSelectedSubOption(new Date(2024, 4, 22))
+        if (value === 6) newValues.subOption = 5;
+        if (value === 7) newValues.subOption = 3;
+        if (value === 8) newValues.subOption = new Date(2024, 4, 22);
+
+        return newValues;
+      });
     } else {
-      setSelectedSubOption(value)
+      setSelected((prevSelected) => {
+        const newValues = { ...prevSelected, subOption: value };
+        return newValues;
+      });
     }
   };
 
@@ -41,8 +46,8 @@ function Index(props) {
   // Get standings
   // -----------------------------------------------------
   React.useEffect(() => {
-    setStandings(standingsService.getStandings(matches, selectedOption, selectedSubOption))
-  }, [selectedOption, selectedSubOption]);
+    setStandings(standingsService.getStandings(matches, selected.option, selected.subOption))
+  }, [selected.option, selected.subOption]);
 
   return (
     <Container
@@ -54,8 +59,7 @@ function Index(props) {
           {
             <Stack spacing={1}>
               <OptionPicker
-                selectedOption={selectedOption}
-                selectedSubOption={selectedSubOption}
+                selected={selected}
                 handleChange={handleChange}
               />
               <StandingsTable

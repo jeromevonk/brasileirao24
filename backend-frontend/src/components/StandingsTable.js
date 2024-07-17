@@ -212,7 +212,6 @@ export default function StandingsTable(props) {
     );
   };
 
-
   // -----------------------------------
   // Cell color
   // -----------------------------------

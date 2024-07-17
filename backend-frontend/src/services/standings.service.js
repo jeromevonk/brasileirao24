@@ -1,4 +1,4 @@
-import { format } from 'date-fns'; 
+import { format } from 'date-fns';
 
 export const standingsService = {
   getStandings,
@@ -8,30 +8,30 @@ const ITERATE_BY_ROUNDS = [1, 2, 3, 4, 5, 7, 8];
 const ITERATE_BY_TEAM = [6];
 
 const TEAMS = {
-  "Athletico-PR": { initials: 'CAP', badge: 'https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR.svg'},
-  "Atlético-GO": { initials: 'ACG', badge: 'https://s.sde.globo.com/media/organizations/2020/07/02/atletico-go-2020.svg'},
-  "Atlético-MG": { initials: 'CAM', badge: 'https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg'},
-  "Bahia": { initials: 'BAH', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg'},
-  "Botafogo": { initials: 'BOT', badge: 'https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg'},
-  "Bragantino": { initials: 'RBB', badge: 'https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg'},
-  "Corinthians": { initials: 'COR', badge: 'https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg'},
-  "Criciúma": { initials: 'CRI', badge: 'https://s.sde.globo.com/media/organizations/2024/03/28/Criciuma-2024.svg'},
-  "Cruzeiro": { initials: 'CRU', badge: 'https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg'},
-  "Cuiabá": { initials: 'CUI', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg'},
-  "Flamengo": { initials: 'FLA', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg'},
-  "Fluminense": { initials: 'FLU', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg'},
-  "Fortaleza": { initials: 'FOR', badge: 'https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg'},
-  "Grêmio": { initials: 'GRE', badge: 'https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg'},
-  "Internacional": { initials: 'INT', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg'},
-  "Juventude": { initials: 'JUV', badge: 'https://s.sde.globo.com/media/organizations/2021/04/29/Juventude-2021-01.svg'},
-  "Palmeiras": { initials: 'PAL', badge: 'https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg'},
-  "São Paulo": { initials: 'SAO', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg'},
-  "Vasco": { initials: 'VAS', badge: 'https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg'},
-  "Vitória": { initials: 'VIT', badge: 'https://s.sde.globo.com/media/organizations/2024/04/09/escudo-vitoria-svg-69281.svg'},
+  "Athletico-PR": { initials: 'CAP', badge: 'https://s.sde.globo.com/media/organizations/2019/09/09/Athletico-PR.svg' },
+  "Atlético-GO": { initials: 'ACG', badge: 'https://s.sde.globo.com/media/organizations/2020/07/02/atletico-go-2020.svg' },
+  "Atlético-MG": { initials: 'CAM', badge: 'https://s.sde.globo.com/media/organizations/2018/03/10/atletico-mg.svg' },
+  "Bahia": { initials: 'BAH', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/bahia.svg' },
+  "Botafogo": { initials: 'BOT', badge: 'https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg' },
+  "Bragantino": { initials: 'RBB', badge: 'https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg' },
+  "Corinthians": { initials: 'COR', badge: 'https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg' },
+  "Criciúma": { initials: 'CRI', badge: 'https://s.sde.globo.com/media/organizations/2024/03/28/Criciuma-2024.svg' },
+  "Cruzeiro": { initials: 'CRU', badge: 'https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg' },
+  "Cuiabá": { initials: 'CUI', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg' },
+  "Flamengo": { initials: 'FLA', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg' },
+  "Fluminense": { initials: 'FLU', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg' },
+  "Fortaleza": { initials: 'FOR', badge: 'https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg' },
+  "Grêmio": { initials: 'GRE', badge: 'https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg' },
+  "Internacional": { initials: 'INT', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/internacional.svg' },
+  "Juventude": { initials: 'JUV', badge: 'https://s.sde.globo.com/media/organizations/2021/04/29/Juventude-2021-01.svg' },
+  "Palmeiras": { initials: 'PAL', badge: 'https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg' },
+  "São Paulo": { initials: 'SAO', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/sao-paulo.svg' },
+  "Vasco": { initials: 'VAS', badge: 'https://s.sde.globo.com/media/organizations/2021/09/04/vasco_SVG.svg' },
+  "Vitória": { initials: 'VIT', badge: 'https://s.sde.globo.com/media/organizations/2024/04/09/escudo-vitoria-svg-69281.svg' },
 }
 
 function getStandings(matches, option, subOption) {
-  
+
   // ---------------------------
   // Create empty standings
   // ---------------------------
@@ -86,7 +86,7 @@ function iterateByRounds(standings, matches, option, subOption) {
 function iterateByTeam(standings, matches, _option, subOption) {
   // Get matches ordered by descending date
   const startedMatches = getStartedMatchesInDescendingOrder(matches);
-  
+
   // For every team
   for (const team of Object.keys(standings)) {
     let toFind = subOption;
@@ -94,13 +94,13 @@ function iterateByTeam(standings, matches, _option, subOption) {
     // Look for last X matches
     for (let i = 0; i < startedMatches.length && toFind > 0; i++) {
       const match = startedMatches[i];
-      
+
       // Did the team play at home, away?
       if (team === match.homeTeam) {
-        calculateMatch(standings, match, true, false, false);
+        calculateMatch(standings, match, true, false, false, true);
         toFind--;
-      } else if(team === match.awayTeam) {
-        calculateMatch(standings, match, false, true, false);
+      } else if (team === match.awayTeam) {
+        calculateMatch(standings, match, false, true, false, true);
         toFind--;
       }
     }
@@ -111,7 +111,7 @@ function iterateByTeam(standings, matches, _option, subOption) {
 // -----------------------------------------------
 // Util
 // -----------------------------------------------
-function getDetailsFromOptions(option, subOption ) {
+function getDetailsFromOptions(option, subOption) {
   const details = {
     startRound: 1,
     endRound: 38,
@@ -171,10 +171,10 @@ function convertStandingsToArray(standings) {
 }
 
 function emptyStandings() {
-  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, lastMatches:  [], "badge": "", "initials": "" }
+  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, lastMatches: [], "badge": "", "initials": "" }
 }
 
-function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit) {
+function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit, addToBeginning = false) {
   const { homeTeam, awayTeam, homeScore, awayScore, started, date } = match;
 
   // If the game has started 
@@ -186,43 +186,65 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
 
     // The home team
     if (calculateHome) {
-      
+
       // Calculate standings
       calculateStandings(standings[homeTeam], homeScore, awayScore);
 
-      // Add to last matches
-      standings[homeTeam].lastMatches.push({
-        isHome: true,
-        outcome: getOutcome(homeScore, awayScore),
-        tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
-      })
-    }
+      // Get match summary
+      const matchToAdd = getMatchSummary(match, true)
 
+      // Add to last matches
+      if (addToBeginning) {
+        standings[homeTeam].lastMatches.unshift(matchToAdd);
+      } else {
+        standings[homeTeam].lastMatches.push(matchToAdd);
+      }
+    }
+    
     // The away team
     if (calculateAway) {
-      
+
       // Calculate standings
       calculateStandings(standings[awayTeam], awayScore, homeScore);
 
+      // Get match summary
+      const matchToAdd = getMatchSummary(match, false)
+
       // Add to last matches
-      standings[awayTeam].lastMatches.push({
-        isHome: false,
-        outcome: getOutcome(awayScore, homeScore),
-        tooltip: `${date} | ${homeTeam} ${homeScore} x ${awayScore} ${awayTeam}`
-      })
+      if (addToBeginning) {
+        standings[awayTeam].lastMatches.unshift(matchToAdd);
+      } else {
+        standings[awayTeam].lastMatches.push(matchToAdd);
+      }
     }
   }
 }
 
-function getOutcome(score, oponentScoreScore,) {
-  if (score > oponentScoreScore) {
-    return 'V'
+function getMatchSummary(match, isHome) {
+  return {
+    isHome,
+    outcome: getOutcome(match, isHome),
+    tooltip: getHeadline(match)
   }
-  else if (score < oponentScoreScore) {
-    return 'D'
-  } else {
+}
+
+function getOutcome(match, isHome) {
+  if (match.homeScore == match.awayScore) {
     return 'E';
   }
+  else if (
+    ( isHome && match.homeScore > match.awayScore) ||
+    (!isHome && match.homeScore < match.awayScore) 
+  ) {
+    return 'V'
+  }
+  else {
+    return 'D'
+  }
+}
+
+function getHeadline(match) {
+  return `${match.date} | ${match.homeTeam} ${match.homeScore} x ${match.awayScore} ${match.awayTeam}`
 }
 
 function getResults(score, oponentScore) {

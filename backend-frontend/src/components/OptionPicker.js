@@ -61,13 +61,13 @@ const options = [
 ];
 
 export default function OptionPicker(props) {
-  const { handleChange, selectedOption, selectedSubOption } = props;
+  const { handleChange, selected} = props;
 
   const context = React.useContext(AppContext);
   const largeScreen = context?.largeScreen;
 
-  const getSubOption = (selectedOption, selectedSubOption) => {
-    if (selectedOption === 6) {
+  const getSubOption = (selected) => {
+    if (selected.option === 6) {
       return (
         <Box sx={{ my: 2 }}>
           <Stack direction="row" spacing={10} alignItems="center" justifyContent="center">
@@ -77,7 +77,7 @@ export default function OptionPicker(props) {
                 labelId="ultimas-category-label"
                 id="ultimas-category"
                 label="ultimas"
-                value={selectedSubOption}
+                value={selected.subOption}
                 sx={{ minWidth: 120 }}
                 onChange={(event => {
                   const { value } = event.target;
@@ -94,7 +94,7 @@ export default function OptionPicker(props) {
           </Stack>
         </Box>
       )
-    } else if (selectedOption === 7) {
+    } else if (selected.option === 7) {
       return (
         <Box sx={{ my: 2 }}>
           <Stack direction="row" spacing={10} alignItems="center" justifyContent="center">
@@ -121,7 +121,7 @@ export default function OptionPicker(props) {
           </Stack>
         </Box>
       )
-    } else if (selectedOption === 8) {
+    } else if (selected.option === 8) {
       return (
         <Box sx={{ my: 2 }}>
           <Stack direction="row" spacing={10} alignItems="center" justifyContent="center">
@@ -171,7 +171,7 @@ export default function OptionPicker(props) {
                     key={opt.key}
                     value={opt.key}
                     size="small" sx={padding}
-                    selected={opt === selectedOption}
+                    selected={opt === selected.option}
                   >
                     {largeScreen.width ? opt.long : opt.short}
                   </ToggleButton>)
@@ -179,7 +179,7 @@ export default function OptionPicker(props) {
             }
           </ToggleButtonGroup>
         </Grid>
-        {getSubOption(selectedOption, selectedSubOption)}
+        {getSubOption(selected.option, selected.subOption)}
       </Stack>
     </Box>
   );
