@@ -179,7 +179,7 @@ export default function OptionPicker(props) {
             }
           </ToggleButtonGroup>
         </Grid>
-        {getSubOption(selected.option, selected.subOption)}
+        {getSubOption(selected)}
       </Stack>
     </Box>
   );
