@@ -104,7 +104,7 @@ export default function OptionPicker(props) {
                 labelId="ate-category-label"
                 id="ate-category"
                 label="ate"
-                value={selectedSubOption}
+                value={selected.subOption}
                 sx={{ minWidth: 120 }}
                 onChange={(event => {
                   const { value } = event.target;
@@ -129,7 +129,7 @@ export default function OptionPicker(props) {
               <DatePicker
                 label="Classificação no dia"
                 sx={{ width: 1 }}
-                value={selectedSubOption}
+                value={selected.subOption}
                 minDate={new Date(2024, 3, 13)}
                 maxDate={new Date(2024, 11, 6)}
                 onChange={(value) => {
