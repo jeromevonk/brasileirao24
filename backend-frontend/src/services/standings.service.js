@@ -66,7 +66,7 @@ function iterateByRounds(standings, matches, option, subOption) {
 function iterateByTeam(standings, matches, _option, subOption) {
   // Get matches ordered by descending date
   const startedMatches = matchesService.getStartedMatchesInDescendingOrder(matches);
-
+  
   // For every team
   for (const team of Object.keys(standings)) {
     let toFind = subOption;

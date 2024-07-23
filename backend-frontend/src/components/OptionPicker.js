@@ -186,5 +186,6 @@ export default function OptionPicker(props) {
 }
 
 OptionPicker.propTypes = {
-  //todo
+  selected: PropTypes.object.isRequired,
+  handleChange: PropTypes.func.isRequired,
 };

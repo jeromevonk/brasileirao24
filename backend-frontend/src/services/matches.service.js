@@ -7,6 +7,7 @@ export const matchesService = {
   getMatches,
   getCurrentRound,
   getStartedMatchesInDescendingOrder,
+  getMatchesFromTeam,
 };
 
 async function getMatches() {
@@ -49,4 +50,14 @@ function getStartedMatchesInDescendingOrder(matches) {
   return matchesArray
     .filter(item => item.started)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
+function getMatchesFromTeam(matches, team) {
+  // Flatten the matches
+  const matchesArray = Object.values(matches).flat();
+
+  // Sort by date ascending
+  return matchesArray
+    .filter(item => [item.homeTeam, item.awayTeam].includes(team))
+    .sort((a, b) => new Date(a.date) - new Date(b.date));
 }

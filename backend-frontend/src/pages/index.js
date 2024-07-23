@@ -2,10 +2,8 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
-import StandingsTable from '../components/StandingsTable';
-import OptionPicker from '../components/OptionPicker';
-import RoundPicker from '../components/RoundPicker';
-import MatchList from '../components/MatchList';
+import Standings from '../components/Standings';
+import Matches from '../components/Matches';
 import { matchesService, standingsService } from 'src/services';
 import { AppContext } from 'src/pages/_app';
 import { withRouter } from 'next/router'
@@ -31,7 +29,7 @@ function Index(props) {
 
   // States
   const [standings, setStandings] = React.useState([]);
-  const [selected, setSelected] = React.useState({option: 1, subOption: 1});
+  const [selected, setSelected] = React.useState({ option: 1, subOption: 1 });
   const [round, setRound] = React.useState(currentRound);
 
   const handleChange = (name, value) => {
@@ -68,26 +66,17 @@ function Index(props) {
       sx={{ paddingLeft: '12px', paddingRight: '12px' }}
     >
       <Box sx={{ my: 2 }}>
-        <Stack spacing={3} direction={largeScreen.width? 'row' : 'column'}>
-            <Stack spacing={1}>
-              <OptionPicker
-                selected={selected}
-                handleChange={handleChange}
-              />
-              <StandingsTable
-                data={standings}
-              />
-            </Stack>
-
-          <Stack spacing={3}>
-            <RoundPicker
-              round={round}
-              handleChange={handleChange}
-            />
-            <MatchList
-              data={matches[round]}
-            />
-          </Stack>
+        <Stack spacing={3} direction={largeScreen.width ? 'row' : 'column'}>
+          <Standings
+            selected={selected}
+            handleChange={handleChange}
+            data={standings}
+          />
+          <Matches 
+            round={round}
+            handleChange={handleChange}
+            data={matches[round]}
+          />
         </Stack>
       </Box>
     </Container>
