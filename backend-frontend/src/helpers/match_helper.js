@@ -22,6 +22,8 @@ async function getRoundFromAPI(round) {
         homeScore: item.placar_oficial_mandante,
         awayScore: item.placar_oficial_visitante,
         date: item.data_realizacao?.substring(0, 10) || null,
+        time: item.hora_realizacao || null,
+        stadium: item.sede?.nome_popular || '',
         started: item.jogo_ja_comecou,
         finished: item.transmissao?.broadcast?.id == "ENCERRADA" ? true : false
       });

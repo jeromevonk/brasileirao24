@@ -4,24 +4,30 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import StandingsTable from '../components/StandingsTable';
 import OptionPicker from '../components/OptionPicker';
+import RoundPicker from '../components/RoundPicker';
+import MatchList from '../components/MatchList';
 import { matchesService, standingsService } from 'src/services';
 import { withRouter } from 'next/router'
 
 export async function getServerSideProps() {
   const matches = await matchesService.getMatches();
+  const currentRound = matchesService.getCurrentRound(matches);
 
   return {
     props: {
-      matches
+      matches,
+      currentRound
     },
   }
 }
 
 function Index(props) {
+  const { matches, currentRound } = props;
+
+  // States
   const [standings, setStandings] = React.useState([]);
   const [selected, setSelected] = React.useState({option: 1, subOption: 1});
-
-  const { matches } = props;
+  const [round, setRound] = React.useState(currentRound);
 
   const handleChange = (name, value) => {
     if (name === 'option') {
@@ -34,11 +40,13 @@ function Index(props) {
 
         return newValues;
       });
-    } else {
+    } else if (name === 'subOption') {
       setSelected((prevSelected) => {
         const newValues = { ...prevSelected, subOption: value };
         return newValues;
       });
+    } else if (name === 'round') {
+      setRound(value)
     }
   };
 
@@ -55,8 +63,7 @@ function Index(props) {
       sx={{ paddingLeft: '12px', paddingRight: '12px' }}
     >
       <Box sx={{ my: 2 }}>
-        <Stack spacing={1}>
-          {
+        <Stack spacing={3} direction={'row'}>
             <Stack spacing={1}>
               <OptionPicker
                 selected={selected}
@@ -66,7 +73,17 @@ function Index(props) {
                 data={standings}
               />
             </Stack>
-          }
+
+          <Stack spacing={3}>
+            <RoundPicker
+              round={round}
+              handleChange={handleChange}
+            />
+            <MatchList
+              data={matches[round]}
+
+            />
+          </Stack>
         </Stack>
       </Box>
     </Container>

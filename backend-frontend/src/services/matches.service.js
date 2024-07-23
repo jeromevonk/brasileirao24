@@ -5,6 +5,7 @@ const baseUrl = `${publicRuntimeConfig.apiUrl}/matches`;
 
 export const matchesService = {
   getMatches,
+  getCurrentRound,
 };
 
 async function getMatches() {
@@ -18,4 +19,23 @@ async function getMatches() {
     console.error('Error fetching matches:', error);
     throw error;
   }
+}
+
+function getCurrentRound(matches) {
+  for (let i = 38; i > 0; i--) {
+    // Get a round
+    const round = matches[i]
+
+    // Look all the matches, check if at least one has started
+    for (let match of round) {
+      if (match.started) {
+        // Found a match that has started. Return this as the current round
+        return i;
+      }
+    }
+  }
+  
+
+  // If nothing started, return round 1
+  return 1
 }

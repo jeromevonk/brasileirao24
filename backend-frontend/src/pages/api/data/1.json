@@ -5,6 +5,8 @@
     "homeScore": 2,
     "awayScore": 1,
     "date": "2024-04-13",
+    "time": "18:30",
+    "stadium": "Beira-Rio",
     "started": true,
     "finished": true
   },
@@ -14,6 +16,8 @@
     "homeScore": 1,
     "awayScore": 1,
     "date": "2024-04-13",
+    "time": "18:30",
+    "stadium": "Heriberto Hülse",
     "started": true,
     "finished": true
   },
@@ -23,6 +27,8 @@
     "homeScore": 2,
     "awayScore": 2,
     "date": "2024-04-13",
+    "time": "21:00",
+    "stadium": "Maracanã",
     "started": true,
     "finished": true
   },
@@ -32,6 +38,8 @@
     "homeScore": 1,
     "awayScore": 2,
     "date": "2024-04-13",
+    "time": "21:00",
+    "stadium": "Morumbis",
     "started": true,
     "finished": true
   },
@@ -41,6 +49,8 @@
     "homeScore": 2,
     "awayScore": 1,
     "date": "2024-04-14",
+    "time": "16:00",
+    "stadium": "São Januário",
     "started": true,
     "finished": true
   },
@@ -50,6 +60,8 @@
     "homeScore": 0,
     "awayScore": 0,
     "date": "2024-04-14",
+    "time": "16:00",
+    "stadium": "Neo Química Arena",
     "started": true,
     "finished": true
   },
@@ -59,6 +71,8 @@
     "homeScore": 4,
     "awayScore": 0,
     "date": "2024-04-14",
+    "time": "16:00",
+    "stadium": "Ligga Arena",
     "started": true,
     "finished": true
   },
@@ -68,6 +82,8 @@
     "homeScore": 1,
     "awayScore": 2,
     "date": "2024-04-14",
+    "time": "16:00",
+    "stadium": "Serra Dourada",
     "started": true,
     "finished": true
   },
@@ -77,6 +93,8 @@
     "homeScore": 3,
     "awayScore": 2,
     "date": "2024-04-14",
+    "time": "17:00",
+    "stadium": "Mineirão",
     "started": true,
     "finished": true
   },
@@ -86,6 +104,8 @@
     "homeScore": 0,
     "awayScore": 1,
     "date": "2024-04-14",
+    "time": "18:30",
+    "stadium": "Barradão",
     "started": true,
     "finished": true
   }

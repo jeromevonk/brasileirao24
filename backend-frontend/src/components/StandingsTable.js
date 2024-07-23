@@ -16,9 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFutbol as faSolidFutbol } from '@fortawesome/free-solid-svg-icons';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
-import {
-  getComparator,
-} from 'src/helpers'
+import { getComparator} from 'src/helpers'
 
 
 function StandingsTableHead(props) {
@@ -190,7 +188,7 @@ export default function StandingsTable(props) {
       }
     };
 
-    const itens = isLarge ? matchList : matchList.slice(-5)
+    const itens = isLarge ? matchList.slice(-5) : matchList.slice(-5)
 
     return (
       <Stack direction="row" spacing={0.7}>

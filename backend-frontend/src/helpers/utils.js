@@ -1,36 +1,7 @@
 export {
-  capitalizeFirstLetter,
-  customlocaleString,
-  sortTitleAlphabetically,
   getComparator,
+  convertDateBrazilianFormat,
 };
-
-function capitalizeFirstLetter(string) {
-  return string[0].toUpperCase() + string.slice(1);
-}
-
-function customlocaleString(value) {
-  if (typeof value === 'string') {
-    value = Number(value);
-  }
-
-  return value.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-function sortTitleAlphabetically(a, b) {
-  // See https://stackoverflow.com/a/37511463/660711
-  const x = a.title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  const y = b.title.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
-  if (x > y) {
-    return 1;
-  }
-  if (x < y) {
-    return -1;
-  }
-
-  return 0;
-}
 
 function getComparator(order, orderBy) {
   return (a, b) => customComparator(a, b, order, orderBy)
@@ -102,5 +73,16 @@ function sortByPoints(a, b, order, orderBy) {
   } else {
     return 0;
   }
+}
+
+function convertDateBrazilianFormat(dateString) {
+  // Split the input date string by the '-' character
+  if (!dateString) return
+  const parts = dateString.split('-');
+
+  // Rearrange the parts into the desired format
+  const formattedDate = `${parts[2]}/${parts[1]}`;
+
+  return formattedDate;
 }
 
