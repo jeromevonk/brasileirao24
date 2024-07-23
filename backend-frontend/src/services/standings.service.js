@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 import { TEAMS } from '../helpers/teams'
 import { convertDateBrazilianFormat } from 'src/helpers'
+import { matchesService } from 'src/services';
 
 export const standingsService = {
   getStandings,
@@ -64,7 +65,7 @@ function iterateByRounds(standings, matches, option, subOption) {
 // -----------------------------------------------
 function iterateByTeam(standings, matches, _option, subOption) {
   // Get matches ordered by descending date
-  const startedMatches = getStartedMatchesInDescendingOrder(matches);
+  const startedMatches = matchesService.getStartedMatchesInDescendingOrder(matches);
 
   // For every team
   for (const team of Object.keys(standings)) {
@@ -264,14 +265,4 @@ function calculateStandings(team, score, oponentScore) {
   team.goalsFor += results.goalsFor
   team.goalsAgainst += results.goalsAgainst
   team.goalDifference += results.goalDifference
-}
-
-function getStartedMatchesInDescendingOrder(matches) {
-  // Flatten the matches
-  const matchesArray = Object.values(matches).flat();
-
-  // Sort by date descending
-  return matchesArray
-    .filter(item => item.started)
-    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }

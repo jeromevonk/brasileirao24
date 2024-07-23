@@ -7,6 +7,7 @@ import OptionPicker from '../components/OptionPicker';
 import RoundPicker from '../components/RoundPicker';
 import MatchList from '../components/MatchList';
 import { matchesService, standingsService } from 'src/services';
+import { AppContext } from 'src/pages/_app';
 import { withRouter } from 'next/router'
 
 export async function getServerSideProps() {
@@ -23,6 +24,10 @@ export async function getServerSideProps() {
 
 function Index(props) {
   const { matches, currentRound } = props;
+
+  // Context
+  const context = React.useContext(AppContext);
+  const largeScreen = context?.largeScreen;
 
   // States
   const [standings, setStandings] = React.useState([]);
@@ -63,7 +68,7 @@ function Index(props) {
       sx={{ paddingLeft: '12px', paddingRight: '12px' }}
     >
       <Box sx={{ my: 2 }}>
-        <Stack spacing={3} direction={'row'}>
+        <Stack spacing={3} direction={largeScreen.width? 'row' : 'column'}>
             <Stack spacing={1}>
               <OptionPicker
                 selected={selected}
@@ -81,7 +86,6 @@ function Index(props) {
             />
             <MatchList
               data={matches[round]}
-
             />
           </Stack>
         </Stack>

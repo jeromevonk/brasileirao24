@@ -6,6 +6,7 @@ const baseUrl = `${publicRuntimeConfig.apiUrl}/matches`;
 export const matchesService = {
   getMatches,
   getCurrentRound,
+  getStartedMatchesInDescendingOrder,
 };
 
 async function getMatches() {
@@ -38,4 +39,14 @@ function getCurrentRound(matches) {
 
   // If nothing started, return round 1
   return 1
+}
+
+function getStartedMatchesInDescendingOrder(matches) {
+  // Flatten the matches
+  const matchesArray = Object.values(matches).flat();
+
+  // Sort by date descending
+  return matchesArray
+    .filter(item => item.started)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 }
