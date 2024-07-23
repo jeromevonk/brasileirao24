@@ -30,7 +30,6 @@ function Index(props) {
   // States
   const [standings, setStandings] = React.useState([]);
   const [selected, setSelected] = React.useState({ option: 1, subOption: 1 });
-  const [round, setRound] = React.useState(currentRound);
 
   const handleChange = (name, value) => {
     if (name === 'option') {
@@ -48,8 +47,6 @@ function Index(props) {
         const newValues = { ...prevSelected, subOption: value };
         return newValues;
       });
-    } else if (name === 'round') {
-      setRound(value)
     }
   };
 
@@ -59,6 +56,7 @@ function Index(props) {
   React.useEffect(() => {
     setStandings(standingsService.getStandings(matches, selected.option, selected.subOption))
   }, [selected.option, selected.subOption]);
+
 
   return (
     <Container
@@ -73,9 +71,8 @@ function Index(props) {
             data={standings}
           />
           <Matches 
-            round={round}
-            handleChange={handleChange}
-            data={matches[round]}
+            currentRound={currentRound}
+            matches={matches}
           />
         </Stack>
       </Box>

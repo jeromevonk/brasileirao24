@@ -21,7 +21,7 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        // width="320px"
+        width="320px"
         mb={0.5}
         mt={0.5}
       >

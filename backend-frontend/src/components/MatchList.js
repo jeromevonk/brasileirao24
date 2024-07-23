@@ -19,11 +19,12 @@ export default function MatchList(props) {
     <Box>
       {
         data.map(match => {
+          // Get initials and badge from team
           const home = getTeam(match.homeTeam);
           const away = getTeam(match.awayTeam);
 
           return (
-            <div id={`match-${home.initials}-${away.initials}`}>
+            <Box id={`match-${home.initials}-${away.initials}`}>
               <MatchResult
                 homeTeam={largeScreen.width ? match.homeTeam : home.initials}
                 homeBadge={home.badge}
@@ -38,7 +39,7 @@ export default function MatchList(props) {
                 stadium={match.stadium}
               />
               <Divider />
-            </div>
+            </Box>
           )
         })
       }
