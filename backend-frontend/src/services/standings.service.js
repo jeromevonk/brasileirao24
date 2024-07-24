@@ -197,6 +197,8 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
         standings[awayTeam].lastMatches.push(matchToAdd);
       }
     }
+
+    // TODO: if the game is started and not finished
   }
 }
 

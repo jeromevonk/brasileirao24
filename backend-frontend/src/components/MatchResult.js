@@ -5,6 +5,15 @@ import Team from '../components/Team';
 import { convertDateBrazilianFormat } from 'src/helpers'
 
 const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, awayScore, date, time, started, finished, stadium }) => {
+  
+  const getColor = (started, finished) => {
+    if (started && !finished) {
+      return 'red';
+    } else {
+      return 'black';
+    }
+  };
+
   return (
     <Stack
       spacing={0}
@@ -29,7 +38,10 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
           <Team name={homeTeam} badge={homeBadge} />
         </Box>
         <Box mx={2} display="flex" justifyContent="center" alignItems="center" width="16%">
-          <Typography variant="h7" component="span" style={{ textAlign: 'center' }}>
+          <Typography
+            variant="h7"
+            component="span"
+            style={{ textAlign: 'center', color: getColor(started, finished) }}>
             {homeScore} x {awayScore}
           </Typography>
         </Box>

@@ -40,7 +40,6 @@ export default function Matches(props) {
 }
 
 Matches.propTypes = {
-  handleChange: PropTypes.func.isRequired,
-  round: PropTypes.number.isRequired,
-  matches: PropTypes.array.isRequired,
+  currentRound: PropTypes.number.isRequired,
+  matches: PropTypes.object.isRequired,
 };

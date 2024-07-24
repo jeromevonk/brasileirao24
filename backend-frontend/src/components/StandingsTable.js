@@ -17,6 +17,7 @@ import { faFutbol as faSolidFutbol } from '@fortawesome/free-solid-svg-icons';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import { getComparator} from 'src/helpers'
+import styles from './StandingsTable.module.css';
 
 
 function StandingsTableHead(props) {
@@ -100,6 +101,7 @@ function StandingsTableHead(props) {
               padding='checkbox'
               sortDirection={orderBy === headCell.id ? order : false}
               sx={{ backgroundColor: headCell.backgroundColor }}
+              className={headCell.id === 'rank' ? styles.stickyRank : headCell.id === 'team' ? styles.stickyTeam : ''}
             >
               <TableSortLabel
                 active={orderBy === headCell.id}
@@ -229,8 +231,8 @@ export default function StandingsTable(props) {
 
   return (
     <Box sx={{ width: '100%' }}>
-      <Paper sx={{ width: '100%', mb: 2 }}>
-        <TableContainer>
+      <Paper elevation={1} sx={{ width: '100%', mb: 1 }}>
+        <TableContainer className={styles.tableContainer}>
           <Table
             sx={{ minWidth: 250 }}
             aria-labelledby="tableTitle"
@@ -259,15 +261,15 @@ export default function StandingsTable(props) {
                       {
                         // Rank
                       }
-                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index + 1) }}>{index + 1}</TableCell>
+                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index + 1) }} className={styles.stickyRank}>{index + 1}</TableCell>
                       {
                         // Team
                       }
-                      <TableCell align="left"><Team name={largeScreen.width ? row.team : row.initials} badge={row.badge} /></TableCell>
+                      <TableCell align="left" className={styles.stickyTeam}><Team name={largeScreen.width ? row.team : row.initials} badge={row.badge} /></TableCell>
                       {
                         // Points
                       }
-                      <CustomTableCell align="center">{row.points}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ fontWeight: 450 }}>{row.points}</CustomTableCell>
                       {
                         // Games
                       }

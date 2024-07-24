@@ -1,6 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 import Divider from '@mui/material/Divider';
 import MatchResult from '../components/MatchResult';
 
@@ -16,7 +17,7 @@ export default function MatchList(props) {
   const largeScreen = context?.largeScreen;
 
   return (
-    <Box>
+    <Paper elevation={1} sx={{ width: '100%'}}>
       {
         data.map(match => {
           // Get initials and badge from team
@@ -24,7 +25,7 @@ export default function MatchList(props) {
           const away = getTeam(match.awayTeam);
 
           return (
-            <Box id={`match-${home.initials}-${away.initials}`}>
+            <Box key={`match-${home.initials}-${away.initials}`}>
               <MatchResult
                 homeTeam={largeScreen.width ? match.homeTeam : home.initials}
                 homeBadge={home.badge}
@@ -43,8 +44,7 @@ export default function MatchList(props) {
           )
         })
       }
-
-    </Box>
+    </Paper>
   );
 }
 
