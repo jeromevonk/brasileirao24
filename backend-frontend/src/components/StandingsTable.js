@@ -177,7 +177,7 @@ export default function StandingsTable(props) {
 
   const getStreak = (matchList, isLarge) => {
 
-    const getColor = (outcome) => {
+    const getStreakCellColor = (outcome) => {
       switch (outcome) {
         case 'E':
           return 'black';
@@ -203,7 +203,7 @@ export default function StandingsTable(props) {
             }}>
               <FontAwesomeIcon
                 icon={faSolidFutbol}
-                style={{ color: getColor(match.outcome), fontSize: '14px' }}
+                style={{ color: getStreakCellColor(match.outcome), fontSize: '14px' }}
               />
             </div>
           </Tooltip>
@@ -215,7 +215,7 @@ export default function StandingsTable(props) {
   // -----------------------------------
   // Cell color
   // -----------------------------------
-  const getCellColor = (index) => {
+  const getRankCellColor = (index) => {
     if (index <= 4) {
       return 'blue';
     } else if (index <= 6) {
@@ -226,6 +226,14 @@ export default function StandingsTable(props) {
       return 'black';
     } else {
       return 'red';
+    }
+  };
+
+  const getInPlayCellColor = (item, inPlay) => {
+    if (inPlay.includes(item)) {
+      return 'red';
+    } else {
+      return 'black';
     }
   };
 
@@ -261,7 +269,7 @@ export default function StandingsTable(props) {
                       {
                         // Rank
                       }
-                      <TableCell align="center" style={{ fontWeight: 450, color: getCellColor(index + 1) }} className={styles.stickyRank}>{index + 1}</TableCell>
+                      <TableCell align="center" style={{ fontWeight: 450, color: getRankCellColor(index + 1) }} className={styles.stickyRank}>{index + 1}</TableCell>
                       {
                         // Team
                       }
@@ -269,7 +277,7 @@ export default function StandingsTable(props) {
                       {
                         // Points
                       }
-                      <CustomTableCell align="center" style={{ fontWeight: 450 }}>{row.points}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ fontWeight: 450, color: getInPlayCellColor("points", row.inPlay) }}>{row.points}</CustomTableCell>
                       {
                         // Games
                       }
@@ -277,31 +285,31 @@ export default function StandingsTable(props) {
                       {
                         // Victories
                       }
-                      <CustomTableCell align="center">{row.victories}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ color: getInPlayCellColor("victory", row.inPlay) }}>{row.victories}</CustomTableCell>
                       {
                         // Draws
                       }
-                      <CustomTableCell align="center">{row.draws}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ color: getInPlayCellColor("draw", row.inPlay) }}>{row.draws}</CustomTableCell>
                       {
                         // Losses
                       }
-                      <CustomTableCell align="center">{row.losses}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ color: getInPlayCellColor("loss", row.inPlay) }}>{row.losses}</CustomTableCell>
                       {
                         // Goals for - only if largeScreen
                       }
                       {
-                        <CustomTableCell align="center">{row.goalsFor}</CustomTableCell>
+                        <CustomTableCell align="center" style={{ color: getInPlayCellColor("goalsFor", row.inPlay) }}>{row.goalsFor}</CustomTableCell>
                       }
                       {
                         // Goals against - only if largeScreen
                       }
                       {
-                        <CustomTableCell align="center">{row.goalsAgainst}</CustomTableCell>
+                        <CustomTableCell align="center" style={{ color: getInPlayCellColor("goalsAgainst", row.inPlay) }}>{row.goalsAgainst}</CustomTableCell>
                       }
                       {
                         // Goal difference
                       }
-                      <CustomTableCell align="center">{row.goalDifference}</CustomTableCell>
+                      <CustomTableCell align="center" style={{ color: getInPlayCellColor("goalDifference", row.inPlay) }}>{row.goalDifference}</CustomTableCell>
                       {
                         // Points lost - only if largeScreen
                       }

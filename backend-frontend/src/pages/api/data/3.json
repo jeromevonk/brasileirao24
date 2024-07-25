@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "Vasco",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-04-20",
+    "time": "16:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Cuiabá",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-04-20",
+    "time": "18:30",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Corinthians",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-04-20",
+    "time": "18:30",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-MG",
+    "awayTeam": "Cruzeiro",
+    "homeScore": 3,
+    "awayScore": 0,
+    "date": "2024-04-20",
+    "time": "21:00",
+    "stadium": "Arena MRV",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "Bahia",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-04-21",
+    "time": "16:00",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Flamengo",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-04-21",
+    "time": "16:00",
+    "stadium": "Allianz Parque",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Internacional",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-04-21",
+    "time": "16:00",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Juventude",
+    "homeScore": 5,
+    "awayScore": 1,
+    "date": "2024-04-21",
+    "time": "18:30",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-GO",
+    "awayTeam": "São Paulo",
+    "homeScore": 0,
+    "awayScore": 3,
+    "date": "2024-04-21",
+    "time": "18:30",
+    "stadium": "Antônio Accioly",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Criciúma",
+    "awayTeam": "Fortaleza",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-07-24",
+    "time": "19:00",
+    "stadium": "Heriberto Hülse",
+    "started": true,
+    "finished": true
+  }
+]

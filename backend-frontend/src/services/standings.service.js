@@ -151,11 +151,11 @@ function convertStandingsToArray(standings) {
 }
 
 function emptyStandings() {
-  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, lastMatches: [], "badge": "", "initials": "" }
+  return { "points": 0, "pointsLost": 0, "matches": 0, "victories": 0, "draws": 0, "losses": 0, "goalsFor": 0, "goalsAgainst": 0, "goalDifference": 0, "percent": 0, "lastMatches": [], "badge": "", "initials": "", "inPlay": [] }
 }
 
 function calculateMatch(standings, match, calculateHome, calculateAway, dateLimit, addToBeginning = false) {
-  const { homeTeam, awayTeam, homeScore, awayScore, started, date } = match;
+  const { homeTeam, awayTeam, homeScore, awayScore, started, finished, date } = match;
 
   // If the game has started 
   // AND
@@ -168,7 +168,7 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
     if (calculateHome) {
 
       // Calculate standings
-      calculateStandings(standings[homeTeam], homeScore, awayScore);
+      calculateStandings(standings[homeTeam], homeScore, awayScore, finished);
 
       // Get match summary
       const matchToAdd = getMatchSummary(match, true)
@@ -185,7 +185,7 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
     if (calculateAway) {
 
       // Calculate standings
-      calculateStandings(standings[awayTeam], awayScore, homeScore);
+      calculateStandings(standings[awayTeam], awayScore, homeScore, finished);
 
       // Get match summary
       const matchToAdd = getMatchSummary(match, false)
@@ -197,10 +197,9 @@ function calculateMatch(standings, match, calculateHome, calculateAway, dateLimi
         standings[awayTeam].lastMatches.push(matchToAdd);
       }
     }
-
-    // TODO: if the game is started and not finished
   }
 }
+
 
 function getMatchSummary(match, isHome) {
   return {
@@ -256,15 +255,29 @@ function getResults(score, oponentScore) {
   return results;
 }
 
-function calculateStandings(team, score, oponentScore) {
+function calculateStandings(teamStandings, score, oponentScore, finished) {
+  // Get results
   const results = getResults(score, oponentScore)
-  team.matches += 1
-  team.points += results.points
-  team.pointsLost += results.pointsLost
-  team.victories += results.victory
-  team.draws += results.draw
-  team.losses += results.loss
-  team.goalsFor += results.goalsFor
-  team.goalsAgainst += results.goalsAgainst
-  team.goalDifference += results.goalDifference
+  
+  // Add to standings
+  teamStandings.matches += 1
+  teamStandings.points += results.points
+  teamStandings.pointsLost += results.pointsLost
+  teamStandings.victories += results.victory
+  teamStandings.draws += results.draw
+  teamStandings.losses += results.loss
+  teamStandings.goalsFor += results.goalsFor
+  teamStandings.goalsAgainst += results.goalsAgainst
+  teamStandings.goalDifference += results.goalDifference
+
+  // Is game in play?
+  if (!finished) {
+    console.log(`Found not finished, ${score} ${oponentScore}`)
+    for (const [key, value] of Object.entries(results)) {
+      // Every key with a value != 0 will be copied to "inPlay"
+      if (value != 0) {
+        teamStandings.inPlay.push(key)
+      }
+    }
+  }
 }
