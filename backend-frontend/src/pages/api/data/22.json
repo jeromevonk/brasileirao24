@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Criciúma",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-08-10",
+    "time": "16:00",
+    "stadium": "Castelão (CE)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Grêmio",
+    "homeScore": 1,
+    "awayScore": 3,
+    "date": "2024-08-10",
+    "time": "19:00",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-08-10",
+    "time": "21:30",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vasco",
+    "awayTeam": "Fluminense",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-08-10",
+    "time": "21:30",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Bragantino",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-08-10",
+    "time": "21:30",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Botafogo",
+    "homeScore": 3,
+    "awayScore": 2,
+    "date": "2024-08-11",
+    "time": "11:00",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Vitória",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-08-11",
+    "time": "16:00",
+    "stadium": "Casa de Apostas Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Palmeiras",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-08-11",
+    "time": "16:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "São Paulo",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-08-11",
+    "time": "16:00",
+    "stadium": "Morumbis",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Internacional",
+    "awayTeam": "Athletico-PR",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-08-11",
+    "time": "19:00",
+    "stadium": "Beira-Rio",
+    "started": true,
+    "finished": true
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "Cuiabá",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-08-03",
+    "time": "16:00",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vasco",
+    "awayTeam": "Bragantino",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-08-03",
+    "time": "19:00",
+    "stadium": "São Januário",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-GO",
+    "awayTeam": "Botafogo",
+    "homeScore": 1,
+    "awayScore": 4,
+    "date": "2024-08-03",
+    "time": "20:00",
+    "stadium": "Antônio Accioly",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Criciúma",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-08-03",
+    "time": "20:00",
+    "stadium": "Heriberto Hülse",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "São Paulo",
+    "awayTeam": "Flamengo",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-08-03",
+    "time": "21:30",
+    "stadium": "Morumbis",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "Bahia",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-08-04",
+    "time": "16:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Juventude",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-08-04",
+    "time": "16:00",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Grêmio",
+    "homeScore": 0,
+    "awayScore": 2,
+    "date": "2024-08-04",
+    "time": "16:00",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Internacional",
+    "awayTeam": "Palmeiras",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-08-04",
+    "time": "17:00",
+    "stadium": "Beira-Rio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Fortaleza",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-08-05",
+    "time": "21:00",
+    "stadium": "Kleber Andrade",
+    "started": true,
+    "finished": true
+  }
+]
