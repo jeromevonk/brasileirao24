@@ -75,7 +75,6 @@ function StandingsTableHead(props) {
     {
       id: 'pointsLost',
       label: 'PP',
-      onlyLargeScreen: true
     },
     {
       id: 'percent',
