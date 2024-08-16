@@ -273,7 +273,7 @@ export default function StandingsTable(props) {
                       {
                         // Team
                       }
-                      <TableCell align="left" className={styles.stickyTeam}><Team name={largeScreen.width ? row.team : row.initials} badge={row.badge} /></TableCell>
+                      <TableCell align="left" className={styles.stickyTeam}><Team name={row.team} display={largeScreen.width ? row.team : row.initials} badge={row.badge} /></TableCell>
                       {
                         // Points
                       }

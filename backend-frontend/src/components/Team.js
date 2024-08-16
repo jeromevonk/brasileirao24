@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { AppContext } from 'src/pages/_app';
 
 export default function Team(props) {
-  const { name, badge } = props;
+  const { name, display, badge } = props;
 
   // Context
   const context = React.useContext(AppContext);
@@ -15,10 +15,10 @@ export default function Team(props) {
       <img src={badge} width="24" height="24" style={{ marginRight: '4px' }} />
       <Box
         component="span"
-        onClick={() => setTeam(name )}
+        onClick={() => setTeam(name)}
         style={{ cursor: 'pointer' }}
       >
-        {name}
+        {display}
       </Box>
     </Box>
   );
@@ -26,5 +26,6 @@ export default function Team(props) {
 
 Team.propTypes = {
   name: PropTypes.string.isRequired,
+  display: PropTypes.string.isRequired,
   badge: PropTypes.string.isRequired,
 };

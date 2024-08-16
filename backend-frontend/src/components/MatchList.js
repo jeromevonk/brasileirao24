@@ -4,17 +4,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Divider from '@mui/material/Divider';
 import MatchResult from '../components/MatchResult';
-
 import { getTeam } from '../helpers/teams'
-
-import { AppContext } from 'src/pages/_app';
 
 export default function MatchList(props) {
   const { data } = props;
-
-  // Context
-  const context = React.useContext(AppContext);
-  const largeScreen = context?.largeScreen;
 
   return (
     <Paper elevation={1} sx={{ width: '100%'}}>
@@ -27,11 +20,17 @@ export default function MatchList(props) {
           return (
             <Box key={`match-${home.initials}-${away.initials}`}>
               <MatchResult
-                homeTeam={largeScreen.width ? match.homeTeam : home.initials}
-                homeBadge={home.badge}
+                homeTeam={{
+                  name: match.homeTeam,
+                  initials: home.initials,
+                  badge: home.badge
+                }}
                 homeScore={match.homeScore}
-                awayTeam={largeScreen.width ? match.awayTeam : away.initials}
-                awayBadge={away.badge}
+                awayTeam={{
+                  name: match.awayTeam,
+                  initials: away.initials,
+                  badge: away.badge
+                }}
                 awayScore={match.awayScore}
                 date={match.date}
                 time={match.time}

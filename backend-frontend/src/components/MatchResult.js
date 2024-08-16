@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import { Box, Stack, Typography } from '@mui/material';
 import Team from '../components/Team';
 import { convertDateBrazilianFormat } from 'src/helpers'
+import { AppContext } from 'src/pages/_app';
 
-const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, awayScore, date, time, started, finished, stadium }) => {
-  
+const MatchResult = ({ homeTeam, homeScore, awayTeam, awayScore, date, time, started, finished, stadium }) => {
+
   const getColor = (started, finished) => {
     if (started && !finished) {
       return 'red';
@@ -13,6 +14,10 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
       return 'black';
     }
   };
+
+  // Context
+  const context = React.useContext(AppContext);
+  const largeScreen = context?.largeScreen;
 
   return (
     <Stack
@@ -30,12 +35,16 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        width="350px"
+        width="320px"
         mb={0.8}
         mt={0.5}
       >
         <Box display="flex" justifyContent="flex-end" alignItems="center" width="42%">
-          <Team name={homeTeam} badge={homeBadge} />
+          <Team
+            name={homeTeam.name}
+            display={largeScreen.width ? homeTeam.name : homeTeam.initials}
+            badge={homeTeam.badge}
+          />
         </Box>
         <Box mx={2} display="flex" justifyContent="center" alignItems="center" width="16%">
           <Typography
@@ -46,7 +55,11 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
           </Typography>
         </Box>
         <Box display="flex" justifyContent="flex-start" alignItems="center" width="42%">
-          <Team name={awayTeam} badge={awayBadge} />
+          <Team
+            name={awayTeam.name}
+            display={largeScreen.width ? awayTeam.name : awayTeam.initials}
+            badge={awayTeam.badge}
+          />
         </Box>
       </Box>
     </Stack>
@@ -57,15 +70,13 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
 export default MatchResult;
 
 MatchResult.propTypes = {
-  homeTeam: PropTypes.string.isRequired,
-  homeBadge: PropTypes.string.isRequired,
-  homeScore: PropTypes.number.isRequired,
-  awayTeam: PropTypes.string.isRequired,
-  awayBadge: PropTypes.string.isRequired,
-  awayScore: PropTypes.number.isRequired,
-  date: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired,
-  started: PropTypes.bool.isRequired,
-  finished: PropTypes.bool.isRequired,
-  stadium: PropTypes.string.isRequired,
+  homeTeam: PropTypes.object.isRequired,
+  homeScore: PropTypes.number,
+  awayTeam: PropTypes.object.isRequired,
+  awayScore: PropTypes.number,
+  date: PropTypes.string,
+  time: PropTypes.string,
+  started: PropTypes.bool,
+  finished: PropTypes.bool,
+  stadium: PropTypes.string,
 };

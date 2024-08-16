@@ -13,7 +13,7 @@ export default function Matches(props) {
   const { currentRound, matches } = props;
 
   const [round, setRound] = React.useState(currentRound);
-  const [page, setPage] = React.useState(2);
+  const [page, setPage] = React.useState(1);
 
   // Context
   const context = React.useContext(AppContext);
@@ -34,9 +34,9 @@ export default function Matches(props) {
   if (team) {
     matchData = matchesService
       .getMatchesFromTeam(matches, team)
-      .slice((page - 1) * 13, (page - 1) * 13 + 13)
+      .slice((page - 1) * 13, (page - 1) * 13 + 13);
   } else {
-    matchData = matches[round]
+    matchData = matches[round];
   }
 
   return (
