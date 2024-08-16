@@ -23,6 +23,8 @@ export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   const [largeScreen, setLargeScreen] = useState({ width: true, height: true });
+  const [team, setTeam] = React.useState('');
+
 
   // ----------------------------------------
   // Set listeners for screen change
@@ -76,6 +78,7 @@ export default function MyApp(props) {
         <CssBaseline />
         <AppContext.Provider value={{
           largeScreen,
+          team: [team, setTeam]
         }}>
           <div>
             <ResponsiveAppBar />

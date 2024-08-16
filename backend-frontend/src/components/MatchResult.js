@@ -1,5 +1,5 @@
-// components/MatchResult.js
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Box, Stack, Typography } from '@mui/material';
 import Team from '../components/Team';
 import { convertDateBrazilianFormat } from 'src/helpers'
@@ -30,8 +30,8 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        width="320px"
-        mb={0.5}
+        width="350px"
+        mb={0.8}
         mt={0.5}
       >
         <Box display="flex" justifyContent="flex-end" alignItems="center" width="42%">
@@ -55,3 +55,17 @@ const MatchResult = ({ homeTeam, homeBadge, homeScore, awayTeam, awayBadge, away
 };
 
 export default MatchResult;
+
+MatchResult.propTypes = {
+  homeTeam: PropTypes.string.isRequired,
+  homeBadge: PropTypes.string.isRequired,
+  homeScore: PropTypes.number.isRequired,
+  awayTeam: PropTypes.string.isRequired,
+  awayBadge: PropTypes.string.isRequired,
+  awayScore: PropTypes.number.isRequired,
+  date: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  started: PropTypes.bool.isRequired,
+  finished: PropTypes.bool.isRequired,
+  stadium: PropTypes.string.isRequired,
+};

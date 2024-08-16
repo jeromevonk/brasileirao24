@@ -36,12 +36,12 @@ const options = [
   {
     key: 4,
     long: "Turno",
-    short: "1T"
+    short: " 1T "
   },
   {
     key: 5,
     long: "Returno",
-    short: "2T"
+    short: " 2T "
   },
   {
     key: 6,
