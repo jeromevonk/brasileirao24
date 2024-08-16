@@ -310,12 +310,9 @@ export default function StandingsTable(props) {
                       }
                       <CustomTableCell align="center" style={{ color: getInPlayCellColor("goalDifference", row.inPlay) }}>{row.goalDifference}</CustomTableCell>
                       {
-                        // Points lost - only if largeScreen
+                        // Points lost
                       }
-                      {
-                        largeScreen.width &&
-                        <CustomTableCell align="center">{row.pointsLost}</CustomTableCell>
-                      }
+                      <CustomTableCell align="center">{row.pointsLost}</CustomTableCell>
                       {
                         // Percent - only if largeScreen
                       }
