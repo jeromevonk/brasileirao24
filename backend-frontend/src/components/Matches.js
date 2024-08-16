@@ -1,13 +1,11 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import { Box, IconButton, Paper, Typography } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import MatchList from './MatchList';
 import RoundPicker from './RoundPicker';
 import PagePicker from './PagePicker';
-import SelectedTeam from './SelectedTeam';
 import { matchesService } from 'src/services';
 import { AppContext } from 'src/pages/_app';
 
@@ -44,26 +42,27 @@ export default function Matches(props) {
   return (
     <Stack spacing={3}>
       <Paper elevation={1} sx={{ width: '100%' }}>
-        <Typography
-          variant="body1"
-          align="center"
-          fontWeight="bold"
-        >
-          Jogos
+        <Typography variant="body1" fontWeight="bold" sx={{ display: 'flex', justifyContent: 'center' }}>
+          {team ? `Jogos - ${team}` : "Jogos"}
+          {
+            team &&
+            <IconButton
+              aria-label="Close"
+              size="small"
+              onClick={() => handleChange('team', '')}
+              sx={{ padding: '0', marginLeft: '4px' }}
+            >
+              <CloseIcon fontSize="small" />
+            </IconButton>
+          }
         </Typography>
       </Paper>
       {
         team ?
-          <Stack>
-            <SelectedTeam
-              team={team}
-              handleChange={handleChange}
-            />
-            <PagePicker
-              page={page}
-              handleChange={handleChange}
-            />
-          </Stack>
+          <PagePicker
+            page={page}
+            handleChange={handleChange}
+          />
           :
           <RoundPicker
             round={round}
