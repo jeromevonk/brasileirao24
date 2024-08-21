@@ -1,24 +1,13 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import TableSortLabel from '@mui/material/TableSortLabel';
-import Tooltip from '@mui/material/Tooltip';
-import Paper from '@mui/material/Paper';
-import Stack from '@mui/material/Stack';
+import { Box, Tooltip, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, TableSortLabel } from '@mui/material/';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFutbol as faSolidFutbol } from '@fortawesome/free-solid-svg-icons';
 import Team from '../components/Team';
 import { AppContext } from 'src/pages/_app';
 import { getComparator} from 'src/helpers'
 import styles from './StandingsTable.module.css';
-
 
 function StandingsTableHead(props) {
   const {

@@ -1,8 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
+import { Box, Stack } from '@mui/material';
 import Standings from '../components/Standings';
 import Matches from '../components/Matches';
 import { matchesService, standingsService } from 'src/services';
