@@ -45,7 +45,7 @@ const options = [
   },
   {
     key: 6,
-    long: "Últimas X",
+    long: "Últimas",
     short: "Ult"
   },
   {
