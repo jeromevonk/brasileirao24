@@ -40,7 +40,7 @@ export default function Matches(props) {
   }
 
   return (
-    <Stack spacing={3}>
+    <Stack spacing={3} sx={{ maxWidth: '400px' }}>
       <Paper elevation={1} sx={{ width: '100%' }}>
         <Typography variant="body1" fontWeight="bold" sx={{ display: 'flex', justifyContent: 'center' }}>
           {team ? `Jogos - ${team}` : "Jogos"}
