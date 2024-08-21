@@ -1,5 +1,5 @@
 function isRoundComplete(round, i) {
-  finished = round.filter(item => item.finished)
+  const finished = round.filter(item => item.finished)
   console.log(`Round ${i} with ${finished.length} finished`)
   return finished.length == 10
 }
@@ -25,7 +25,7 @@ async function getRoundFromAPI(round) {
         time: item.hora_realizacao || null,
         stadium: item.sede?.nome_popular || '',
         started: item.jogo_ja_comecou,
-        finished: item.transmissao?.broadcast?.id == "ENCERRADA" ? true : false
+        finished: item.transmissao?.broadcast?.id == "ENCERRADA"
       });
     }
 

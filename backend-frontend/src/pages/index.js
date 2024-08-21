@@ -1,4 +1,5 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
@@ -20,8 +21,7 @@ export async function getServerSideProps() {
   }
 }
 
-function Index(props) {
-  const { matches, currentRound } = props;
+function Index({ matches, currentRound }) {
 
   // Context
   const context = React.useContext(AppContext);
@@ -81,3 +81,8 @@ function Index(props) {
 }
 
 export default withRouter(Index)
+
+Index.propTypes = {
+  matches: PropTypes.object.isRequired,
+  currentRound: PropTypes.number.isRequired,
+};

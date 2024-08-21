@@ -8,11 +8,11 @@ export default function Team(props) {
 
   // Context
   const context = React.useContext(AppContext);
-  const [_, setTeam] = context?.team;
+  const [, setTeam] = context?.team || undefined;
 
   return (
     <Box display="flex" alignItems="center">
-      <img src={badge} width="24" height="24" style={{ marginRight: '4px' }} />
+      <img src={badge} width="24" height="24" style={{ marginRight: '4px' }} alt={name} />
       <Box
         component="span"
         onClick={() => setTeam(name)}
