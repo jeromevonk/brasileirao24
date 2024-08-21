@@ -14,6 +14,7 @@ async function getMatches() {
   try {
     const response = await fetch(baseUrl);
     if (!response.ok) {
+      console.log(baseUrl)
       throw new Error('Failed to fetch matches');
     }
     return await response.json();

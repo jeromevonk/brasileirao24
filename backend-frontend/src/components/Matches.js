@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Stack from '@mui/material/Stack';
-import { Box, IconButton, Paper, Typography } from '@mui/material';
+import { IconButton, Paper, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import MatchList from './MatchList';
 import RoundPicker from './RoundPicker';
@@ -17,7 +17,7 @@ export default function Matches(props) {
 
   // Context
   const context = React.useContext(AppContext);
-  const [team, setTeam] = context?.team;
+  const [team, setTeam] = context?.team || ['', undefined];
 
   const handleChange = (name, value) => {
     if (name === 'round') {

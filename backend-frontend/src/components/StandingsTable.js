@@ -83,9 +83,19 @@ function StandingsTableHead(props) {
     },
     {
       id: 'streak',
-      label: 'Últimos J',
+      label: 'Últimos Jogos',
     },
   ];
+
+  function getClassName(headCellId) {
+    if (headCellId === 'rank') {
+      return styles.stickyRank;
+    } else if (headCellId === 'team') {
+      return styles.stickyTeam;
+    } else {
+      return '';
+    }
+  }
 
   return (
     <TableHead>
@@ -100,7 +110,7 @@ function StandingsTableHead(props) {
               padding='checkbox'
               sortDirection={orderBy === headCell.id ? order : false}
               sx={{ backgroundColor: headCell.backgroundColor }}
-              className={headCell.id === 'rank' ? styles.stickyRank : headCell.id === 'team' ? styles.stickyTeam : ''}
+              className={getClassName(headCell.id)}
             >
               <TableSortLabel
                 active={orderBy === headCell.id}
@@ -137,7 +147,6 @@ export default function StandingsTable(props) {
   // States
   const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('points');
-  const [selected, setSelected] = React.useState([]);
 
   const rows = props.data || [];
 
@@ -154,25 +163,6 @@ export default function StandingsTable(props) {
     setOrderBy(property);
   };
 
-  const handleClick = (_event, id) => {
-    const selectedIndex = selected.indexOf(id);
-    let newSelected = [];
-
-    if (selectedIndex === -1) {
-      newSelected = newSelected.concat(selected, id);
-    } else if (selectedIndex === 0) {
-      newSelected = newSelected.concat(selected.slice(1));
-    } else if (selectedIndex === selected.length - 1) {
-      newSelected = newSelected.concat(selected.slice(0, -1));
-    } else if (selectedIndex > 0) {
-      newSelected = newSelected.concat(
-        selected.slice(0, selectedIndex),
-        selected.slice(selectedIndex + 1),
-      );
-    }
-
-    setSelected(newSelected);
-  };
 
   const getStreak = (matchList, isLarge) => {
 
@@ -189,12 +179,12 @@ export default function StandingsTable(props) {
       }
     };
 
-    const itens = isLarge ? matchList.slice(-5) : matchList.slice(-5)
+    const itens = isLarge ? matchList.slice(-6) : matchList.slice(-5)
 
     return (
       <Stack direction="row" spacing={0.7}>
         {itens.map((match, index) => (
-          <Tooltip key={index} title={match.tooltip}>
+          <Tooltip key={match.tooltip} title={match.tooltip}>
             <div style={{ 
               display: 'flex', 
               alignItems: 'center', 
@@ -246,7 +236,6 @@ export default function StandingsTable(props) {
             size={'small'}
           >
             <StandingsTableHead
-              numSelected={selected.length}
               order={order}
               orderBy={orderBy}
               onRequestSort={handleRequestSort}
@@ -260,8 +249,6 @@ export default function StandingsTable(props) {
                   return (
                     <TableRow
                       hover
-                      onClick={(event) => handleClick(event, row.id)}
-                      role="checkbox"
                       tabIndex={-1}
                       key={row.team}
                     >
