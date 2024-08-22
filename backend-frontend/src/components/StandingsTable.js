@@ -20,60 +20,22 @@ function StandingsTableHead(props) {
     onRequestSort(event, property);
   };
 
+  const createHeadCell = (id, label, options = {}) => ({ id, label, ...options });
+
   const headCells = [
-    {
-      id: 'rank',
-      label: '',
-    },
-    {
-      id: 'team',
-      label: 'Team',
-    },
-    {
-      id: 'points',
-      label: 'P',
-    },
-    {
-      id: 'matches',
-      label: 'J',
-    },
-    {
-      id: 'victories',
-      label: 'V',
-    },
-    {
-      id: 'draws',
-      label: 'E',
-    },
-    {
-      id: 'losses',
-      label: 'D',
-    },
-    {
-      id: 'goalsFor',
-      label: 'GP',
-    },
-    {
-      id: 'goalsAgainst',
-      label: 'GC',
-    },
-    {
-      id: 'goalDifference',
-      label: 'SG',
-    },
-    {
-      id: 'pointsLost',
-      label: 'PP',
-    },
-    {
-      id: 'percent',
-      label: '%',
-      onlyLargeScreen: true,
-    },
-    {
-      id: 'streak',
-      label: 'Últimos Jogos',
-    },
+    createHeadCell('rank', ''),
+    createHeadCell('team', 'Team'),
+    createHeadCell('points', 'P'),
+    createHeadCell('matches', 'J'),
+    createHeadCell('victories', 'V'),
+    createHeadCell('draws', 'E'),
+    createHeadCell('losses', 'D'),
+    createHeadCell('goalsFor', 'GP'),
+    createHeadCell('goalsAgainst', 'GC'),
+    createHeadCell('goalDifference', 'SG'),
+    createHeadCell('pointsLost', 'PP'),
+    createHeadCell('percent', '%', { onlyLargeScreen: true }),
+    createHeadCell('streak', 'Últimos Jogos'),
   ];
 
   function getClassName(headCellId) {
