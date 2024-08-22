@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
@@ -11,7 +11,6 @@ import createEmotionCache from '../createEmotionCache';
 import ResponsiveAppBar from 'src/components/ResponsiveAppBar';
 
 export const AppContext = React.createContext();
-
 // Thresholds in pixels for detecting large screen
 const WIDTH_TRESHOLD = 940;
 const HEIGT_TRESHOLD = 900;
@@ -67,6 +66,12 @@ export default function MyApp(props) {
     }
   }, []);
 
+  // Memoizing
+  const memoized = useMemo(() => ({
+    largeScreen,
+    team: [team, setTeam]
+  }), [largeScreen, team]);
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -74,12 +79,8 @@ export default function MyApp(props) {
         <title>Brasileirão 2024</title>
       </Head>
       <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
-        <AppContext.Provider value={{
-          largeScreen,
-          team: [team, setTeam]
-        }}>
+        <AppContext.Provider value={memoized}>
           <div>
             <ResponsiveAppBar />
             <Component {...pageProps} />
