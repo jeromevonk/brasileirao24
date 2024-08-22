@@ -11,15 +11,15 @@ export default function Team(props) {
   const [, setTeam] = context?.team || undefined;
 
   return (
-    <Box display="flex" alignItems="center">
+    <Box 
+      display="flex" 
+      alignItems="center"
+      component="span"
+      onClick={() => setTeam(name)}
+      style={{ cursor: 'pointer' }}
+    >
       <img src={badge} width="24" height="24" style={{ marginRight: '4px' }} alt={name} />
-      <Box
-        component="span"
-        onClick={() => setTeam(name)}
-        style={{ cursor: 'pointer' }}
-      >
-        {display}
-      </Box>
+      {display}
     </Box>
   );
 }

@@ -8,7 +8,7 @@ const TEAMS = {
     "Corinthians": { initials: 'COR', badge: 'https://s.sde.globo.com/media/organizations/2019/09/30/Corinthians.svg' },
     "Criciúma": { initials: 'CRI', badge: 'https://s.sde.globo.com/media/organizations/2024/03/28/Criciuma-2024.svg' },
     "Cruzeiro": { initials: 'CRU', badge: 'https://s.sde.globo.com/media/organizations/2021/02/13/cruzeiro_2021.svg' },
-    "Cuiabá": { initials: 'CUI', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg' },
+    "Cuiabá": { initials: 'CUI', badge: 'https://s.sde.globo.com/media/organizations/2018/12/26/Cuiaba_EC.svg' },
     "Flamengo": { initials: 'FLA', badge: 'https://s.sde.globo.com/media/organizations/2018/04/10/Flamengo-2018.svg' },
     "Fluminense": { initials: 'FLU', badge: 'https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg' },
     "Fortaleza": { initials: 'FOR', badge: 'https://s.sde.globo.com/media/organizations/2021/09/19/Fortaleza_2021_1.svg' },
