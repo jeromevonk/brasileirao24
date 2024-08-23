@@ -71,7 +71,7 @@ export default function OptionPicker(props) {
       return (
         <Box sx={{ my: 2 }}>
           <Stack direction="row" spacing={10} alignItems="center" justifyContent="center">
-            <FormControl>
+            <FormControl size="small">
               <InputLabel id="ultimas-select-label">Últimas</InputLabel>
               <Select
                 labelId="ultimas-category-label"
@@ -97,8 +97,8 @@ export default function OptionPicker(props) {
     } else if (selected.option === 7) {
       return (
         <Box sx={{ my: 2 }}>
-          <Stack direction="row" spacing={10} alignItems="center" justifyContent="center">
-            <FormControl>
+          <Stack direction="row" spacing={1} alignItems="center" justifyContent="center">
+            <FormControl size="small">
               <InputLabel id="ate-select-label">Até</InputLabel>
               <Select
                 labelId="ate-category-label"
