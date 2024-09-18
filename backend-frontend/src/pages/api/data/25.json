@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Criciúma",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-08-31",
+    "time": "18:30",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Fortaleza",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-08-31",
+    "time": "21:00",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 2,
+    "awayScore": 3,
+    "date": "2024-09-01",
+    "time": "11:00",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 3,
+    "awayScore": 1,
+    "date": "2024-09-01",
+    "time": "11:00",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Flamengo",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-09-01",
+    "time": "16:00",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "Vasco",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-09-01",
+    "time": "18:30",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "São Paulo",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-09-01",
+    "time": "18:30",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Bahia",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-09-01",
+    "time": "18:30",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Palmeiras",
+    "homeScore": 0,
+    "awayScore": 2,
+    "date": "2024-09-01",
+    "time": "18:30",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Internacional",
+    "homeScore": 1,
+    "awayScore": 3,
+    "date": "2024-09-01",
+    "time": "18:30",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  }
+]

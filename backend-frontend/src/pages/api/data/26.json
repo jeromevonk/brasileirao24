@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Atlético-GO",
+    "awayTeam": "Vitória",
+    "homeScore": 0,
+    "awayScore": 2,
+    "date": "2024-09-14",
+    "time": "16:00",
+    "stadium": "Antônio Accioly",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Fortaleza",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-09-14",
+    "time": "18:30",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Corinthians",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-09-14",
+    "time": "21:00",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Criciúma",
+    "homeScore": 5,
+    "awayScore": 0,
+    "date": "2024-09-15",
+    "time": "16:00",
+    "stadium": "Allianz Parque",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Grêmio",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-09-15",
+    "time": "16:00",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Fluminense",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-09-15",
+    "time": "16:00",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "São Paulo",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-09-15",
+    "time": "18:30",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 3,
+    "awayScore": 0,
+    "date": "2024-09-15",
+    "time": "18:30",
+    "stadium": "Casa de Apostas Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Vasco",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-09-15",
+    "time": "18:30",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Internacional",
+    "awayTeam": "Cuiabá",
+    "homeScore": 3,
+    "awayScore": 0,
+    "date": "2024-09-16",
+    "time": "20:00",
+    "stadium": "Beira-Rio",
+    "started": true,
+    "finished": true
+  }
+]
