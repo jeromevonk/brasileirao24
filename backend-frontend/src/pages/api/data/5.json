@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-05-04",
+    "time": "16:00",
+    "stadium": "Kleber Andrade",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Flamengo",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-05-04",
+    "time": "18:30",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Fortaleza",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-05-04",
+    "time": "21:00",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "São Paulo",
+    "homeScore": 1,
+    "awayScore": 3,
+    "date": "2024-05-05",
+    "time": "16:00",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Vasco",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-05-05",
+    "time": "16:00",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Bahia",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-05-05",
+    "time": "18:30",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Palmeiras",
+    "homeScore": 0,
+    "awayScore": 2,
+    "date": "2024-05-05",
+    "time": "18:30",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-06-05",
+    "time": "19:00",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Internacional",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-08-28",
+    "time": "19:30",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Criciúma",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-09-25",
+    "time": "19:00",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  }
+]

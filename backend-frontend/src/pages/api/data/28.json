@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-09-28",
+    "time": "18:30",
+    "stadium": "Brinco de Ouro",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Grêmio",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-09-28",
+    "time": "21:00",
+    "stadium": "Mané Garrincha",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Bragantino",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-09-29",
+    "time": "11:00",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "São Paulo",
+    "awayTeam": "Corinthians",
+    "homeScore": 3,
+    "awayScore": 1,
+    "date": "2024-09-29",
+    "time": "16:00",
+    "stadium": "Mané Garrincha",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Cuiabá",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-09-29",
+    "time": "16:00",
+    "stadium": "Castelão (CE)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-GO",
+    "awayTeam": "Fluminense",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-09-29",
+    "time": "16:00",
+    "stadium": "Antônio Accioly",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Internacional",
+    "awayTeam": "Vitória",
+    "homeScore": 3,
+    "awayScore": 1,
+    "date": "2024-09-29",
+    "time": "18:30",
+    "stadium": "Beira-Rio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Vasco",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-09-29",
+    "time": "18:30",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Criciúma",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-09-29",
+    "time": "18:30",
+    "stadium": "Casa de Apostas Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Athletico-PR",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-09-29",
+    "time": "20:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Cruzeiro",
+    "homeScore": 0,
+    "awayScore": 2,
+    "date": "2024-07-10",
+    "time": "18:30",
+    "stadium": "Centenário",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vasco",
+    "awayTeam": "Corinthians",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-07-10",
+    "time": "19:00",
+    "stadium": "São Januário",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Bahia",
+    "homeScore": 1,
+    "awayScore": 3,
+    "date": "2024-07-10",
+    "time": "19:00",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 3,
+    "awayScore": 1,
+    "date": "2024-07-11",
+    "time": "19:30",
+    "stadium": "Allianz Parque",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Fortaleza",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-07-11",
+    "time": "20:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Criciúma",
+    "awayTeam": "Fluminense",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-07-11",
+    "time": "20:00",
+    "stadium": "Heriberto Hülse",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-MG",
+    "awayTeam": "São Paulo",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-07-11",
+    "time": "21:30",
+    "stadium": "Arena MRV",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "Botafogo",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-07-11",
+    "time": "21:30",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Juventude",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-09-05",
+    "time": "20:00",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Internacional",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-09-25",
+    "time": "19:00",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  }
+]
