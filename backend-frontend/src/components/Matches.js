@@ -13,7 +13,7 @@ export default function Matches(props) {
   const { currentRound, matches } = props;
 
   const [round, setRound] = React.useState(currentRound);
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = React.useState(3);
 
   // Context
   const context = React.useContext(AppContext);
