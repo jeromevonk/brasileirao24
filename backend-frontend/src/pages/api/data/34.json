@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Cruzeiro",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-11-20",
+    "time": "11:00",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "São Paulo",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-11-20",
+    "time": "16:30",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-11-20",
+    "time": "16:30",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Criciúma",
+    "awayTeam": "Vitória",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-11-20",
+    "time": "16:30",
+    "stadium": "Heriberto Hülse",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Palmeiras",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-11-20",
+    "time": "18:00",
+    "stadium": "Casa de Apostas Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Juventude",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-11-20",
+    "time": "19:00",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Flamengo",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-11-20",
+    "time": "19:00",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-MG",
+    "awayTeam": "Botafogo",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-11-20",
+    "time": "21:30",
+    "stadium": "Independência",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vasco",
+    "awayTeam": "Internacional",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-11-21",
+    "time": "20:00",
+    "stadium": "São Januário",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "Fortaleza",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-11-22",
+    "time": "21:30",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  }
+]

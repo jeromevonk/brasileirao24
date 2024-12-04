@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "Vitória",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-11-23",
+    "time": "19:30",
+    "stadium": "Nilton Santos (Engenhão)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-GO",
+    "awayTeam": "Palmeiras",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-11-23",
+    "time": "19:30",
+    "stadium": "Antônio Accioly",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Cuiabá",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-11-23",
+    "time": "19:30",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "São Paulo",
+    "awayTeam": "Atlético-MG",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-11-23",
+    "time": "21:30",
+    "stadium": "Morumbis",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Internacional",
+    "awayTeam": "Bragantino",
+    "homeScore": 4,
+    "awayScore": 1,
+    "date": "2024-11-24",
+    "time": "16:00",
+    "stadium": "Beira-Rio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Athletico-PR",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-11-24",
+    "time": "16:00",
+    "stadium": "Casa de Apostas Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Corinthians",
+    "awayTeam": "Vasco",
+    "homeScore": 3,
+    "awayScore": 1,
+    "date": "2024-11-24",
+    "time": "16:00",
+    "stadium": "Neo Química Arena",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fluminense",
+    "awayTeam": "Criciúma",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-11-26",
+    "time": "19:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Flamengo",
+    "homeScore": 0,
+    "awayScore": 0,
+    "date": "2024-11-26",
+    "time": "20:00",
+    "stadium": "Castelão (CE)",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cruzeiro",
+    "awayTeam": "Grêmio",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-11-27",
+    "time": "21:00",
+    "stadium": "Mineirão",
+    "started": true,
+    "finished": true
+  }
+]

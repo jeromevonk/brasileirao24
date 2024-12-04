@@ -156,11 +156,11 @@ export default function StandingsTable(props) {
   // Cell color
   // -----------------------------------
   const getRankCellColor = (index) => {
-    if (index <= 4) {
+    if (index <= 6) {
       return 'blue';
-    } else if (index <= 6) {
+    } else if (index <= 8) {
       return 'lightblue';
-    } else if (index <= '12') {
+    } else if (index <= 14) {
       return 'green';
     } else if (index <= 16) {
       return 'black';

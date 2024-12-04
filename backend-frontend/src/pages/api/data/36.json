@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Atlético-MG",
+    "awayTeam": "Juventude",
+    "homeScore": 2,
+    "awayScore": 3,
+    "date": "2024-11-26",
+    "time": "21:30",
+    "stadium": "Independência",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Botafogo",
+    "homeScore": 1,
+    "awayScore": 3,
+    "date": "2024-11-26",
+    "time": "21:30",
+    "stadium": "Allianz Parque",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Bahia",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-11-30",
+    "time": "19:30",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Criciúma",
+    "awayTeam": "Corinthians",
+    "homeScore": 2,
+    "awayScore": 4,
+    "date": "2024-11-30",
+    "time": "19:30",
+    "stadium": "Heriberto Hülse",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vasco",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-11-30",
+    "time": "21:30",
+    "stadium": "São Januário",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "São Paulo",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-12-01",
+    "time": "16:00",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Internacional",
+    "homeScore": 3,
+    "awayScore": 2,
+    "date": "2024-12-01",
+    "time": "16:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Vitória",
+    "awayTeam": "Fortaleza",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-12-01",
+    "time": "18:30",
+    "stadium": "Barradão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Cruzeiro",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-12-01",
+    "time": "18:30",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Athletico-PR",
+    "awayTeam": "Fluminense",
+    "homeScore": 1,
+    "awayScore": 1,
+    "date": "2024-12-01",
+    "time": "18:30",
+    "stadium": "Ligga Arena",
+    "started": true,
+    "finished": true
+  }
+]
