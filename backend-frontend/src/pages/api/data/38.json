@@ -1,0 +1,112 @@
+[
+  {
+    "homeTeam": "Grêmio",
+    "awayTeam": "Corinthians",
+    "homeScore": 0,
+    "awayScore": 3,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Arena do Grêmio",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Atlético-MG",
+    "awayTeam": "Athletico-PR",
+    "homeScore": 1,
+    "awayScore": 0,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Arena MRV",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bahia",
+    "awayTeam": "Atlético-GO",
+    "homeScore": 2,
+    "awayScore": 0,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Arena Fonte Nova",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Flamengo",
+    "awayTeam": "Vitória",
+    "homeScore": 2,
+    "awayScore": 2,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Maracanã",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Botafogo",
+    "awayTeam": "São Paulo",
+    "homeScore": 2,
+    "awayScore": 1,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Nilton Santos",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Palmeiras",
+    "awayTeam": "Fluminense",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Allianz Parque",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Bragantino",
+    "awayTeam": "Criciúma",
+    "homeScore": 5,
+    "awayScore": 1,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Nabi Abi Chedid",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Fortaleza",
+    "awayTeam": "Internacional",
+    "homeScore": 3,
+    "awayScore": 0,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Castelão",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Cuiabá",
+    "awayTeam": "Vasco",
+    "homeScore": 1,
+    "awayScore": 2,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Arena Pantanal",
+    "started": true,
+    "finished": true
+  },
+  {
+    "homeTeam": "Juventude",
+    "awayTeam": "Cruzeiro",
+    "homeScore": 0,
+    "awayScore": 1,
+    "date": "2024-12-08",
+    "time": "16:00",
+    "stadium": "Alfredo Jaconi",
+    "started": true,
+    "finished": true
+  }
+]
